@@ -42,27 +42,50 @@
       <section class="selection-program">
 <!-- Форма для подбора программы -->
         <form class="selection-program-form" action="https://echo.htmlacademy.ru/" method="get">
+
           <div class="selection-program-form__cat-data__wrapper">
 <!-- Блок для ввода данных кота -->
-            <fieldset class="selection-program-form__cat-data">
+            <fieldset class="selection-program-form__cat-data cat-data">
               <legend class="visually-hidden">Данные кота</legend>
-
-              <div class="selection-program-form__label">
-                <label class="selection-program-form__label-name label__nickname" for="username">ИМЯ:*</label>
-                <input class="selection-program-form__box" type="text" name="username" id="nickname" placeholder="КЕКСИК" required>
-              </div>
-              <div class="selection-program-form__label">
-                <label class="selection-program-form__label-name label__weight" for="weight-cat">Вес (кг):*</label>
-                <input class="selection-program-form__box" type="number" name="weight-cat" id="weight-cat-id" placeholder="7" required>
-              </div>
-              <div class="selection-program-form__label">
-                <label class="selection-program-form__label-name label__age" for="age">Возраст (лет):</label>
-                <input class="selection-program-form__box" type="number" name="age" id="age-cat" placeholder="7">
-              </div>
-
+              <ul class="cat-data__list">
+                <li class="cat-data__item">
+                  <label class="cat-data__field-name field-name" for="username">Имя:*</label>
+                  <input class="cat-data__input-box input-box" type="text" name="username" id="nickname" placeholder="КЕКСИК" required>
+                </li>
+                <li class="cat-data__item">
+                  <label class="cat-data__field-name field-name" for="weight-cat">Вес (кг):*</label>
+                  <input class="cat-data__input-box input-box" type="number" name="weight-cat" id="weight-cat-id" placeholder="7" required>
+                </li>
+                <li class="cat-data__item">
+                  <label class="cat-data__field-name field-name" for="age">Возраст (лет):</label>
+                  <input class="cat-data__input-box input-box" type="number" name="age" id="age-cat" placeholder="7">
+                </li>
+              </ul>
             </fieldset>
-
           </div>
+
+<!-- Чекбоксы  для вбора целей программы -->
+          <div class="selection-program-form__radio__wrapper">
+            <fieldset class="selection-program-form__radio choice-program">
+              <legend class="visually-hidden">Выбор программы</legend>
+              <ul class="choice-program">
+                <li class="choice-program__item">
+                  <input class="choice-program__radio-button radio-button" type="radio" name="program" value="weight-loss" >
+                  <label class="choice-program__field-name field-name field-name--radio" for="weight-loss">Похудение</label>
+                </li>
+                <li class="choice-program__item">
+                  <input class="choice-program__radio-button radio-button" type="radio" name="program" value="fatten">
+                  <label class="choice-program__field-name field-name field-name--radio" for="fatten">Набор массы</label>
+                </li>
+                <li class="choice-program__item">
+                  <input class="choice-program__radio-button radio-button" type="radio" name="program" value="undecided">
+                  <label class="choice-program__field-name field-name field-name--radio" for="undecided">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <input type="submit" value="Отправить">
+
         </form>
 
       </section>
