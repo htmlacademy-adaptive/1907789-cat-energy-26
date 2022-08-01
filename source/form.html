@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page-body">
+    <header class="main-header">
+      <a class="main-header__logo-image" href="index.html">
+        <img src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи.">
+      </a>
+      <a class="main-header__logo-text" href="index.html">
+        <img src="#" width="" height="" alt="Cat energy.">
+      </a>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <header class="main-header__wrapper">
+        <h1 class="main-title">Подбор программы</h1>
+        <p>Заполните анкету, и мы подберем<br>
+          программу питания для вашего кота
+        </p>
+      </header>
+
+      <section class="selection-program">
+<!-- Форма для подбора программы -->
+        <form class="selection-program-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="selection-program-form__cat-data__wrapper">
+<!-- Блок для ввода данных кота -->
+            <fieldset class="selection-program-form__cat-data">
+              <legend class="visually-hidden">Данные кота</legend>
+
+              <div class="selection-program-form__label">
+                <label class="selection-program-form__label-name label__nickname" for="username">ИМЯ:*</label>
+                <input class="selection-program-form__box" type="text" name="username" id="nickname" placeholder="КЕКСИК" required>
+              </div>
+              <div class="selection-program-form__label">
+                <label class="selection-program-form__label-name label__weight" for="weight-cat">Вес (кг):*</label>
+                <input class="selection-program-form__box" type="number" name="weight-cat" id="weight-cat-id" placeholder="7" required>
+              </div>
+              <div class="selection-program-form__label">
+                <label class="selection-program-form__label-name label__age" for="age">Возраст (лет):</label>
+                <input class="selection-program-form__box" type="number" name="age" id="age-cat" placeholder="7">
+              </div>
+
+            </fieldset>
+
+          </div>
+        </form>
+
+      </section>
+
+    </main>
+  </body>
+</html>
