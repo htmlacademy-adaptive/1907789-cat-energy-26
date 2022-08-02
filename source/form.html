@@ -112,14 +112,90 @@
             <label class="coment__title" for="coment">Текст заметки</label>
             <textarea class="coment__textarea" id="coment" name="coment" rows="7" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
           </div>
-
-          <input type="submit" value="Отправить">
-
+<!-- Блок с чекбоксами -->
+          <div class="selection-program-form__additionally__wrapper">
+            <fieldset class="selection-program-form__additionally additionally">
+              <legend class="additionally__title">Дополнительно</legend>
+              <ul class="additionally__list">
+                <li class="additionally__item">
+                  <input class="additionally__checkbox" type="checkbox" name="additionally" value="sugar" checked>
+                  <label class="item-name item-name--additionally" for="additionally">сахарозаменитель</label>
+                </li>
+                <li class="additionally__item">
+                  <input class="additionally__checkbox" type="checkbox" name="additionally" value="water">
+                  <label class="item-name item-name--additionally" for="additionally">питьевая вода</label>
+                </li>
+                <li class="additionally__item">
+                  <input class="additionally_checkbox" type="checkbox" name="additionally" value="milk">
+                  <label class="item-name item-name--additionally" for="additionally">молоко</label>
+                </li>
+                <li class="additionally__item">
+                  <input class="additionally_checkbox" type="checkbox" name="additionally" value="vitamins">
+                  <label class="item-name item-name--additionally" for="additionally">витамины</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+<!-- Кнопка отправки формы -->
+          <div class="button__submit-form__wrapper"><input class="button botton__submit-form" type="submit" value="отправить заявку"></div>
         </form>
 
-      </section>
+        <p class="notation">* — Обязательные поля</p>
 
+      </section>
+      <!-- Блок с адресом -->
+      <div class="address__container--page-form">
+        <div class="address__wrapper">
+          <p class="cooperation">приглашаем<br>
+            к сотрудничеству<br>
+            дилеров!
+          </p>
+          <address class="address__location">ул. Большая<br>
+            Конюшенная, д. 19/8 <br>
+            Санкт-Петербург
+          </address>
+        </div>
+      </div>
+<!-- Карта -->
+      <div class="location--page-form">
+        <img class="map_location" src="#" alt="Карта">
+        <img class="logo-map" src="" alt="Логотип">
+      </div>
     </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-header__logo-text" href="index.html">
+          <img src="#" width="" height="" alt="Cat energy.">
+        </a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <svg></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <svg></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
   </body>
   </html>
 
