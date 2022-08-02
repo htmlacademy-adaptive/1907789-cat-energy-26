@@ -68,7 +68,7 @@
           <div class="selection-program-form__radio__wrapper">
             <fieldset class="selection-program-form__radio choice-program">
               <legend class="visually-hidden">Выбор программы</legend>
-              <ul class="choice-program">
+              <ul class="choice-program__list">
                 <li class="choice-program__item">
                   <input class="choice-program__radio-button radio-button" type="radio" name="program" value="weight-loss" >
                   <label class="choice-program__field-name field-name field-name--radio" for="weight-loss">Похудение</label>
@@ -84,6 +84,30 @@
               </ul>
             </fieldset>
           </div>
+          <!-- Контактные данные владельца -->
+          <div class="selection-program-form__wrapper">
+            <fieldset class="selection-program-form__contact-owner contact-owner">
+              <legend class="contact-owner__title">Контактные данные<br>
+                (владельца кота)</legend>
+              <ul class="contact-owner__list">
+                <li class="contact-owner__item">
+                  <label class="contact-owner__email" for="email">E-mail:*</label>
+                  <!-- див для вставки и позиционирования иконки с помощью псевдоэлемента after -->
+                  <div class="contact-owner__icon contact-owner__icon__email">
+                    <input class="contact-owner__item__email" type="email" name="email" placeholder="kuklachev@gmail.com" required >
+                  </div>
+                </li>
+                <li class="contact-owner__item">
+                  <label class="contact-owner__phone-number" for="phone-number">Телефон:*</label>
+                  <!-- див для вставки и позиционирования иконки с помощью псевдоэлемента after -->
+                  <div class="contact-owner__icon contact-owner__icon__phone-number">
+                    <input class="contact-owner__item__phone-number" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required >
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
           <input type="submit" value="Отправить">
 
         </form>
@@ -92,4 +116,24 @@
 
     </main>
   </body>
-</html>
+  </html>
+
+  <div class="__wrapper">
+    <fieldset class=" choice-program">
+      <legend class="visually-hidden">Выбор программы</legend>
+      <ul class="">
+        <li class="">
+          <input class="" type="" name="" value="" >
+          <label class="" for="">Похудение</label>
+        </li>
+        <li class="">
+          <input class="" type="" name="" value="">
+          <label class="" for="">Набор массы</label>
+        </li>
+        <li class="choice-program__item">
+          <input class="" type="" name="" value="">
+          <label class="" for="">Не знаю (Нужен ваш совет)</label>
+        </li>
+      </ul>
+    </fieldset>
+  </div>
