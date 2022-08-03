@@ -19,10 +19,10 @@
           </button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Каталог продукции</a>
+              <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a href="#">Подбор программы</a>
@@ -40,6 +40,7 @@
       </header>
 
       <section class="selection-program">
+        <h2 class="visually-hidden">Форма подбора программы</h2>
 <!-- Форма для подбора программы -->
         <form class="selection-program-form" action="https://echo.htmlacademy.ru/" method="get">
 
@@ -50,15 +51,15 @@
               <ul class="cat-data__list">
                 <li class="cat-data__item">
                   <label class="item-name item-name--cat-data" for="username">Имя:*</label>
-                  <input class="cat-data__input-box input-box" type="text" name="username" id="nickname" placeholder="КЕКСИК" required>
+                  <input class="cat-data__input-box input-box" type="text" name="username" id="username" placeholder="КЕКСИК" required>
                 </li>
                 <li class="cat-data__item">
                   <label class="item-name item-name--cat-data" for="weight-cat">Вес (кг):*</label>
-                  <input class="cat-data__input-box input-box" type="number" name="weight-cat" id="weight-cat-id" placeholder="7" required>
+                  <input class="cat-data__input-box input-box" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
                 </li>
                 <li class="cat-data__item">
                   <label class="item-name item-name--cat-data" for="age">Возраст (лет):</label>
-                  <input class="cat-data__input-box input-box" type="number" name="age" id="age-cat" placeholder="7">
+                  <input class="cat-data__input-box input-box" type="number" name="age" id="age" placeholder="7">
                 </li>
               </ul>
             </fieldset>
@@ -70,15 +71,15 @@
               <legend class="visually-hidden">Выбор программы</legend>
               <ul class="choice-program__list">
                 <li class="choice-program__item">
-                  <input class="choice-program__radio-button radio-button" type="radio" name="program" value="weight-loss" >
+                  <input class="choice-program__radio-button radio-button" type="radio" name="program" id="weight-loss" value="weight-loss" >
                   <label class="item-name item-name--choice-program" for="weight-loss">Похудение</label>
                 </li>
                 <li class="choice-program__item">
-                  <input class="choice-program__radio-button radio-button" type="radio" name="program" value="fatten">
+                  <input class="choice-program__radio-button radio-button" type="radio" name="program" id="fatten" value="fatten">
                   <label class="item-name item-name--choice-program" for="fatten">Набор массы</label>
                 </li>
                 <li class="choice-program__item">
-                  <input class="choice-program__radio-button radio-button" type="radio" name="program" value="undecided">
+                  <input class="choice-program__radio-button radio-button" type="radio" name="program" id="undecided" value="undecided">
                   <label class="item-name item-name--choice-program" for="undecided">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
@@ -94,14 +95,14 @@
                   <label class="contact-owner__email" for="email">E-mail:*</label>
                   <!-- див для вставки и позиционирования иконки с помощью псевдоэлемента after -->
                   <div class="contact-owner__icon contact-owner__icon__email">
-                    <input class="contact-owner__item__email" type="email" name="email" placeholder="kuklachev@gmail.com" required >
+                    <input class="contact-owner__item__email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required >
                   </div>
                 </li>
                 <li class="contact-owner__item">
                   <label class="contact-owner__phone-number" for="phone-number">Телефон:*</label>
                   <!-- див для вставки и позиционирования иконки с помощью псевдоэлемента after -->
                   <div class="contact-owner__icon contact-owner__icon__phone-number">
-                    <input class="contact-owner__item__phone-number" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required >
+                    <input class="contact-owner__item__phone-number" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required >
                   </div>
                 </li>
               </ul>
@@ -118,33 +119,34 @@
               <legend class="additionally__title">Дополнительно</legend>
               <ul class="additionally__list">
                 <li class="additionally__item">
-                  <input class="additionally__checkbox" type="checkbox" name="additionally" value="sugar" checked>
-                  <label class="item-name item-name--additionally" for="additionally">сахарозаменитель</label>
+                  <input class="additionally__checkbox" type="checkbox" name="additionally" id="sugar" value="sugar" checked>
+                  <label class="item-name item-name--additionally" for="sugar">сахарозаменитель</label>
                 </li>
                 <li class="additionally__item">
-                  <input class="additionally__checkbox" type="checkbox" name="additionally" value="water">
-                  <label class="item-name item-name--additionally" for="additionally">питьевая вода</label>
+                  <input class="additionally__checkbox" type="checkbox" name="additionally" id="water" value="water">
+                  <label class="item-name item-name--additionally" for="water">питьевая вода</label>
                 </li>
                 <li class="additionally__item">
-                  <input class="additionally_checkbox" type="checkbox" name="additionally" value="milk">
-                  <label class="item-name item-name--additionally" for="additionally">молоко</label>
+                  <input class="additionally_checkbox" type="checkbox" name="additionally" id="milk" value="milk">
+                  <label class="item-name item-name--additionally" for="milk">молоко</label>
                 </li>
                 <li class="additionally__item">
-                  <input class="additionally_checkbox" type="checkbox" name="additionally" value="vitamins">
-                  <label class="item-name item-name--additionally" for="additionally">витамины</label>
+                  <input class="additionally_checkbox" type="checkbox" name="additionally" id="vitamins" value="vitamins">
+                  <label class="item-name item-name--additionally" for="vitamins">витамины</label>
                 </li>
               </ul>
             </fieldset>
           </div>
 <!-- Кнопка отправки формы -->
-          <div class="button__submit-form__wrapper"><input class="button botton__submit-form" type="submit" value="отправить заявку"></div>
+          <div class="button__submit-form__wrapper">
+            <input class="button botton__submit-form" type="submit" value="отправить заявку"></div>
         </form>
 
         <p class="notation">* — Обязательные поля</p>
 
       </section>
 <!-- Блок с адресом -->
-      <div class="address__container--page-form">
+      <div class="address__container--background-gray">
         <div class="address__wrapper">
           <p class="cooperation">приглашаем<br>
             к сотрудничеству<br>
