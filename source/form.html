@@ -31,22 +31,24 @@
         </div>
       </nav>
     </header>
-    <main class="main-container">
-      <header class="main-header__wrapper">
-        <h1 class="main-title">Подбор программы</h1>
-        <p>Заполните анкету, и мы подберем<br>
-          программу питания для вашего кота
-        </p>
-      </header>
+    <main class="main-container main-form">
+      <header class="main-form__header form-header">
+        <div class="form-header__wrapper">
+         <h1 class="main-title">Подбор программы</h1>
+         <p class="instrutision">Заполните анкету, и мы подберем<br>
+              программу питания для вашего кота
+          </p>
+        </div>
+        </header>
 
       <section class="selection-program">
         <h2 class="visually-hidden">Форма подбора программы</h2>
-<!-- Форма для подбора программы -->
-        <form class="selection-program-form" action="https://echo.htmlacademy.ru/" method="get">
+        <!-- Форма для подбора программы -->
+        <form class="selection-program__form form-selection" action="https://echo.htmlacademy.ru/" method="get">
 
-          <div class="selection-program-form__cat-data__wrapper">
-<!-- Блок для ввода данных кота -->
-            <fieldset class="selection-program-form__cat-data cat-data">
+          <div class="form-selection__wrapper">
+            <!-- Блок для ввода данных кота -->
+            <fieldset class="form-selection__cat-data cat-data">
               <legend class="visually-hidden">Данные кота</legend>
               <ul class="cat-data__list">
                 <li class="cat-data__item">
@@ -63,11 +65,11 @@
                 </li>
               </ul>
             </fieldset>
-          </div>
 
-<!-- Чекбоксы  для вбора целей программы -->
-          <div class="selection-program-form__radio__wrapper">
-            <fieldset class="selection-program-form__radio choice-program">
+
+            <!-- Чекбоксы  для вбора целей программы -->
+
+            <fieldset class="form-selection__radio choice-program">
               <legend class="visually-hidden">Выбор программы</legend>
               <ul class="choice-program__list">
                 <li class="choice-program__item">
@@ -84,38 +86,40 @@
                 </li>
               </ul>
             </fieldset>
-          </div>
-<!-- Контактные данные владельца -->
-          <div class="selection-program-form__contact-owner__wrapper">
-            <fieldset class="selection-program-form__contact-owner contact-owner">
-              <legend class="contact-owner__title">Контактные данные<br>
+
+            <!-- Контактные данные владельца -->
+
+            <fieldset class="form-selection__contact contact">
+              <legend class="contact__title">Контактные данные<br>
                 (владельца кота)</legend>
-              <ul class="contact-owner__list">
-                <li class="contact-owner__item">
-                  <label class="contact-owner__email" for="email">E-mail:*</label>
+              <ul class="contact__list">
+                <li class="contact__item contact-owner">
+                  <label class="contact-owner__label-name" for="email">E-mail:*</label>
                   <!-- див для вставки и позиционирования иконки с помощью псевдоэлемента after -->
-                  <div class="contact-owner__icon contact-owner__icon__email">
-                    <input class="contact-owner__item__email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required >
+                  <div class="contact-owner__icon contact-owner__icon--email">
+                    <input class="contact-owner__field contact-owner__field--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required >
                   </div>
                 </li>
-                <li class="contact-owner__item">
-                  <label class="contact-owner__phone-number" for="phone-number">Телефон:*</label>
+                <li class="contact__item contact-owner">
+                  <label class="contact-owner__label-name"  for="phone-number">Телефон:*</label>
                   <!-- див для вставки и позиционирования иконки с помощью псевдоэлемента after -->
-                  <div class="contact-owner__icon contact-owner__icon__phone-number">
-                    <input class="contact-owner__item__phone-number" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required >
+                  <div class="contact-owner__icon contact-owner__icon--phone-number">
+                    <input class="contact-owner__field contact-owner__field--phone-number" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required >
                   </div>
                 </li>
               </ul>
             </fieldset>
-          </div>
-<!-- Блок с коментарием -->
-          <div class="selection-program-form__comment__wrapper comment">
-            <label class="coment__title" for="coment">Текст заметки</label>
-            <textarea class="coment__textarea" id="coment" name="coment" rows="7" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
-          </div>
-<!-- Блок с чекбоксами -->
-          <div class="selection-program-form__additionally__wrapper">
-            <fieldset class="selection-program-form__additionally additionally">
+
+            <!-- Блок с коментарием -->
+
+            <div class="form-selection__coment coment">
+              <label class="coment__title" for="coment">Текст заметки</label>
+              <textarea class="coment__textarea" id="coment" name="coment" rows="7" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+            </div>
+
+           <!-- Блок с чекбоксами -->
+
+            <fieldset class="form-selection__additionally additionally">
               <legend class="additionally__title">Дополнительно</legend>
               <ul class="additionally__list">
                 <li class="additionally__item">
@@ -127,26 +131,27 @@
                   <label class="item-name item-name--additionally" for="water">питьевая вода</label>
                 </li>
                 <li class="additionally__item">
-                  <input class="additionally_checkbox" type="checkbox" name="additionally" id="milk" value="milk">
+                  <input class="additionally__checkbox" type="checkbox" name="additionally" id="milk" value="milk">
                   <label class="item-name item-name--additionally" for="milk">молоко</label>
                 </li>
                 <li class="additionally__item">
-                  <input class="additionally_checkbox" type="checkbox" name="additionally" id="vitamins" value="vitamins">
+                  <input class="additionally__checkbox" type="checkbox" name="additionally" id="vitamins" value="vitamins">
                   <label class="item-name item-name--additionally" for="vitamins">витамины</label>
                 </li>
               </ul>
             </fieldset>
+
+            <!-- Кнопка отправки формы -->
+
+            <input class="button botton-submit-form" type="submit" value="отправить заявку">
           </div>
-<!-- Кнопка отправки формы -->
-          <div class="button__submit-form__wrapper">
-            <input class="button botton__submit-form" type="submit" value="отправить заявку"></div>
         </form>
 
         <p class="notation">* — Обязательные поля</p>
 
       </section>
-<!-- Блок с адресом -->
-      <div class="address__container--background-gray">
+      <!-- Блок с адресом -->
+      <div class="address-container address-container--background-gray address">
         <div class="address__wrapper">
           <p class="cooperation">приглашаем<br>
             к сотрудничеству<br>
@@ -156,18 +161,17 @@
             Конюшенная, д. 19/8 <br>
             Санкт-Петербург
           </address>
+          <!-- Карта -->
+          <div class="location">
+            <img class="location__map" src="img/location.jpg" width="320" height="362" alt="Карта">
+          </div>
         </div>
-      </div>
-
-<!-- Карта -->
-      <div class="location__wrapper">
-        <img class="map_location" src="img/location.jpg" width="320" height="362" alt="Карта">
       </div>
     </main>
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="main-header__logo-text" href="index.html">
+        <a class="main-footer__logo-text" href="index.html">
           <img src="img/logo-mobile-text.svg" width="128" height="24" alt="Cat energy.">
         </a>
         <div class="main-footer__social social">
