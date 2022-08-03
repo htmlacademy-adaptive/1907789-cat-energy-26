@@ -36,9 +36,10 @@
   </header>
 
   <main class="main-container main-container__catalog">
-    <h1 class="main-title main-title__catalog">Каталог продукции</h1>
-<!-- Каталог основной продукции -->
+    <h1 class="visually-hidden">Каталог</h1>
+    <!-- Каталог основной продукции -->
     <section class="product-catalog product-catalog__main">
+      <h2 class="main-title main-title__catalog">Каталог продукции</h2>
       <div class="product-catalog__wrapper">
         <ul class="product-card__list">
           <li class="product-card__item">
@@ -185,6 +186,63 @@
 
       </div>
 
+    </section>
+
+    <section class="product-catalog product-catalog__aditional">
+      <h2 class="main-title main-title__catalog__aditional">Дополнительные товары</h2>
+      <div class="product-catalog__aditional__wrapper">
+        <li class="product-card__item">
+          <p class="product-card__item__title">САХАРОЗАМЕНИТЕЛЬ</p>
+          <ul class="product-card__item__description">
+            <li class="description-line">
+              <span class="description-line__point-name">1 упаковка (100 г)</span>
+              <span class="description-line__point-value">200 Р.</span>
+            </li>
+          </ul>
+          <button class="button" type="button">заказать</button>
+        </li>
+      </div>
+      <div class="product-catalog__aditional__wrapper">
+        <li class="product-card__item">
+          <p class="product-card__item__title">ПИТЬЕВАЯ ВОДА</p>
+          <ul class="product-card__item__description">
+            <li class="description-line">
+              <span class="description-line__point-name">5 литров</span>
+              <span class="description-line__point-value">50 Р.</span>
+            </li>
+          </ul>
+          <button class="button" type="button">заказать</button>
+        </li>
+        <li class="product-card__item">
+          <p class="product-card__item__title">МОЛОКО </p>
+          <ul class="product-card__item__description">
+            <li class="description-line">
+              <span class="description-line__point-name">1 литр</span>
+              <span class="description-line__point-value">100 Р.</span>
+            </li>
+          </ul>
+          <button class="button" type="button">заказать</button>
+        </li>
+        <li class="product-card__item">
+          <p class="product-card__item__title">ВИТАМИНЫ</p>
+          <ul class="product-card__item__description">
+            <li class="description-line">
+              <span class="description-line__point-name">1 упаковка (30 г)</span>
+              <span class="description-line__point-value">300 Р.</span>
+            </li>
+          </ul>
+          <button class="button" type="button">заказать</button>
+        </li>
+      </div>
+    </section>
+<!-- Акция -->
+    <section class="gift">
+      <div class="gift__wrapper">
+        <h3 class="visually-hidden">Подарок</h3>
+        <p class="gift__text">Закажите все<br>
+          и получите чехол для<br>
+          кота в подарок!</p>
+      </div>
     </section>
 <!-- Блок с адресом -->
     <div class="address__container">
