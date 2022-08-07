@@ -1,6 +1,50 @@
 .promo {
+  position: relative;
   width: 320px;
-  background-image: url("/source/img/backgound-image-index.jpg");
+  color: #ffffff;
+  text-align: center;
+}
+
+.promo__backdrop {
+  position: absolute;
+  width: 320px;
+  height: 302px;
+  background-image: url(/img/index-background.png);
   background-color: #68B738;
   background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.promo__backdrop-owerlay {
+  position: absolute;
+  background-color: #68B738D9;
+  width: 320px;
+  height: 302px;
+}
+
+.promo__wrapper {
+  position: relative;
+  padding-top: 27px;
+  width: 320px;
+}
+
+.promo__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.promo__button {
+  display: inline-block;
+  width: 280px;
 }
