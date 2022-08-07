@@ -3,34 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
   </head>
   <body class="page-body">
 
     <header class="main-header">
-      <a class="main-header__logo-image" href="index.html">
-        <img src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи.">
-      </a>
-      <a class="main-header__logo-text" href="index.html">
-        <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat energy.">
-      </a>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+      <div class="main-header__container header-container">
+        <a class="header-container__logo-image" href="index.html">
+          <img src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи.">
+        </a>
+        <a class="header-container__logo-text" href="index.html">
+          <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat energy.">
+        </a>
+        <button class="header-container__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      <div class="main-header__nav main-nav">
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">Главная</a>
+              <a class="main-nav__item--link" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class="main-nav__item--link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
+              <a class="main-nav__item--link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="main-container main-index">
@@ -145,11 +149,11 @@
           <div class="live-example__showcase showcase">
             <img class="showcase__image showcase__image--fat" src="img/fat.jpg" width="280" height="232" alt="Толстый кот.">
             <div class="showcase__toggle">
-              <button class="toggle-firstly" type="button">Было</button>
+              <button class="toggle toggle--then" type="button">Было</button>
               <div class="range-scale range-scale--mobile">
                 <button class="range-bar range-bar-mobile" type="button"></button>
               </div>
-              <button class="toggle-firstly" type="button">Стало</button>
+              <button class="toggle toggle--now" type="button">Стало</button>
             </div>
           </div>
         </div>
@@ -157,7 +161,7 @@
       <!-- Блок с адресом -->
       <div class="address-container address">
         <div class="address__wrapper">
-          <p class="cooperation">приглашаем<br>
+          <p class="partnership">приглашаем<br>
             к сотрудничеству<br>
             дилеров!
           </p>
