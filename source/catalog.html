@@ -11,43 +11,45 @@
 <body class="page-body">
 
   <header class="main-header">
-    <a class="main-header__logo-image" href="index.html">
-      <img src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи.">
-    </a>
-    <a class="main-header__logo-text" href="index.html">
-      <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat energy.">
-    </a>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+    <div class="main-header__container header-container">
+      <a class="header-container__logo-image" href="index.html">
+        <img src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи.">
+      </a>
+      <a class="header-container__logo-text" href="index.html">
+        <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat energy.">
+      </a>
+      <button class="header-container__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <div class="main-header__nav">
+      <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a href="index.html">Главная</a>
+            <a class="main-nav__item--link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a href="#">Каталог продукции</a>
+            <a class="main-nav__item--link" href="#">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
-            <a href="form.html">Подбор программы</a>
+            <a class="main-nav__item--link" href="form.html">Подбор программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
-  <main class="main-container main-catalog">
-    <h1 class="visually-hidden">Каталог</h1>
-    <!-- Каталог основной продукции -->
-    <section class="main-catalog__product-catalog product-catalog">
-      <h2 class="product-catalog__title">Каталог продукции</h2>
-      <div class="product-catalog__wrapper">
+  <main class="main-container">
+    <div class="main-catalog">
+      <h1 class="visually-hidden">Каталог</h1>
+      <!-- Каталог основной продукции -->
+      <section class="product-catalog product-catalog__wrapper">
+        <h2 class="product-catalog__title">Каталог продукции</h2>
         <ul class="product-card-list">
           <li class="product-card-item product">
             <img class="product__image" src="img/chicken-small.jpg" alt="Cat Energy PRO 500 г курица.">
             <p class="product-card-item__title">Cat Energy PRO 500 г</p>
-            <ul class="card-description-list">
+            <ul class="product__card-description card-description-list">
               <li class="description-item">
                 <span class="description-item__point-name">Масса</span>
                 <span class="description-item__point-value">500 г</span>
@@ -61,7 +63,7 @@
                 <span class="description-item__point-value">700 Р.</span>
               </li>
             </ul>
-            <button class="button button-buy" type="button">заказать</button>
+            <button class="product__button button" type="button">заказать</button>
           </li>
           <li class="product-card-item product">
             <img class="product__image" src="img/chicken-big.jpg" alt="Cat Energy PRO 1000 г курица.">
@@ -80,7 +82,7 @@
                 <span class="description-item__point-value">1000 Р.</span>
               </li>
             </ul>
-            <button class="button button-buy" type="button">заказать</button>
+            <button class="product__button button" type="button">заказать</button>
           </li>
           <li class="product-card-item product">
             <img class="product__image" src="img/fish-small.jpg" alt="Cat Energy PRO 500 г рыба.">
@@ -185,82 +187,78 @@
             <button class="button button--gray">показать все</button>
           </li>
         </ul>
-
-      </div>
-
-    </section>
-
-    <section class="aditional-product">
-      <h2 class="aditional-product__title main-title">Дополнительные товары</h2>
-      <div class="aditional-product__wrapper">
-
-        <ul class="product-card-list">
-          <li class="product-card-item product">
-            <p class="product-card-item__title">САХАРОЗАМЕНИТЕЛЬ</p>
-            <ul class="card-description-list">
-              <li class="description-item">
-                <span class="description-item__point-name">1 упаковка (100 г)</span>
-                <span class="description-item__point-value">200 Р.</span>
-              </li>
-            </ul>
-            <button class="button button-buy" type="button">заказать</button>
-          </li>
-          <li class="product-card-item product">
-            <p class="product-card-item__title">ПИТЬЕВАЯ ВОДА</p>
-            <ul class="card-description-list">
-              <li class="description-item">
-                <span class="description-item__point-name">5 литров</span>
-                <span class="description-item__point-value">50 Р.</span>
-              </li>
-            </ul>
-            <button class="button button-buy" type="button">заказать</button>
-          </li>
-          <li class="product-card-item product">
-            <p class="product-card-item__title">МОЛОКО</p>
-            <ul class="card-description-list">
-              <li class="description-item">
-                <span class="description-item__point-name">1 литр</span>
-                <span class="description-item__point-value">100 Р.</span>
-              </li>
-            </ul>
-            <button class="button button-buy" type="button">заказать</button>
-          </li>
-          <li class="product-card-item product">
-            <p class="product-card-item__title">ВИТАМИНЫ</p>
-            <ul class="card-description-list">
-              <li class="description-item">
-                <span class="description-item__point-name">1 упаковка (30 г)</span>
-                <span class="description-item__point-value">300 Р.</span>
-              </li>
-            </ul>
-            <button class="button button-buy" type="button">заказать</button>
-          </li>
-        </ul>
-      </div>
-    </section>
-<!-- Акция -->
-    <section class="gift">
-      <div class="gift__wrapper">
-        <h3 class="visually-hidden">Подарок</h3>
-        <p class="gift__text">Закажите все<br>
-          и получите чехол для<br>
-          кота в подарок!</p>
-      </div>
-    </section>
-    <!-- Блок с адресом -->
-    <div class="address-container address-container--background-gray address">
-      <div class="address__wrapper">
-       <p class="cooperation">приглашаем<br>
-        к сотрудничеству<br>
-        дилеров!
-        </p>
-        <address class="address__location">ул. Большая<br>
-        Конюшенная, д. 19/8 <br>
-        Санкт-Петербург
-        </address>
+      </section>
+      <section class="aditional-product">
+        <h2 class="aditional-product__title main-title">Дополнительные товары</h2>
+        <div class="aditional-product__wrapper">
+          <ul class="product-card-list">
+            <li class="product-card-item product">
+              <p class="product-card-item__title">САХАРОЗАМЕНИТЕЛЬ</p>
+              <ul class="card-description-list">
+                <li class="description-item">
+                  <span class="description-item__point-name">1 упаковка (100 г)</span>
+                  <span class="description-item__point-value">200 Р.</span>
+                </li>
+              </ul>
+              <button class="button button-buy" type="button">заказать</button>
+            </li>
+            <li class="product-card-item product">
+              <p class="product-card-item__title">ПИТЬЕВАЯ ВОДА</p>
+              <ul class="card-description-list">
+                <li class="description-item">
+                  <span class="description-item__point-name">5 литров</span>
+                  <span class="description-item__point-value">50 Р.</span>
+                </li>
+              </ul>
+              <button class="button button-buy" type="button">заказать</button>
+            </li>
+            <li class="product-card-item product">
+              <p class="product-card-item__title">МОЛОКО</p>
+              <ul class="card-description-list">
+                <li class="description-item">
+                  <span class="description-item__point-name">1 литр</span>
+                  <span class="description-item__point-value">100 Р.</span>
+                </li>
+              </ul>
+              <button class="button button-buy" type="button">заказать</button>
+            </li>
+            <li class="product-card-item product">
+              <p class="product-card-item__title">ВИТАМИНЫ</p>
+              <ul class="card-description-list">
+                <li class="description-item">
+                  <span class="description-item__point-name">1 упаковка (30 г)</span>
+                  <span class="description-item__point-value">300 Р.</span>
+                </li>
+              </ul>
+              <button class="button button-buy" type="button">заказать</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Акция -->
+      <section class="gift">
+        <div class="gift__wrapper">
+          <h3 class="visually-hidden">Подарок</h3>
+          <p class="gift__text">Закажите все<br>
+            и получите чехол для<br>
+            кота в подарок!</p>
+        </div>
+      </section>
+      <!-- Блок с адресом -->
+      <div class="address--gray">
+        <div class="address__wrapper">
+          <p class="address__partnership">приглашаем<br>
+            к сотрудничеству<br>
+            дилеров!
+          </p>
+          <address class="address__address-location">ул. Большая<br>
+            Конюшенная, д. 19/8 <br>
+            Санкт-Петербург
+          </address>
+        </div>
         <!-- Карта -->
-       <div class="location">
-          <img class="location__map" src="img/location.jpg" width="320" height="362" alt="Карта">
+        <div class="address-location">
+          <img class="address-location__map" src="img/location.jpg" width="320" height="362" alt="Карта">
         </div>
       </div>
     </div>
@@ -269,9 +267,9 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo-text" href="index.html">
-        <img src="img/logo-mobile-text.svg" width="128" height="24" alt="Cat energy.">
+        <img class="main-footer__logo-text--image" src="img/logo-mobile-text.svg" width="128" height="24" alt="Cat energy.">
       </a>
-      <div class="main-footer__social social">
+      <div class="social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
