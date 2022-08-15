@@ -5,6 +5,10 @@
   width: 320px;
   margin: 0 auto;
   background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
 }
 
 .main-header__container {
@@ -12,6 +16,11 @@
   width: 280px;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    min-width: 180px;
+    justify-content: flex-start;
+  }
 }
 
 .main-header__nav {
