@@ -1,0 +1,49 @@
+.calculation {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  row-gap: 20px;
+}
+
+.calculation__description {
+  grid-column: 1/-1;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: @dark-grey;
+  margin: 0;
+}
+
+.calculation__info {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.calculation__info--text {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  margin: 0;
+}
+
+.calculation__info--weight-loss {
+  grid-column: 1/2;
+}
+
+.calculation__info--day {
+  grid-column: 2/3;
+}
+
+.calculation__spent {
+  grid-column: 1/-1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
