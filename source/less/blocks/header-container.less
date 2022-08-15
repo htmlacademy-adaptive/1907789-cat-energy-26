@@ -1,7 +1,5 @@
 .header-container {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .header-container__logo-image {
@@ -9,12 +7,28 @@
   padding: 10px 0;
 }
 
+.header-container__logo-image--device {
+  @media (min-width: @tablet-width) {
+    content: url("/img/logo-tablet.png");
+    width: 174px;
+    height: 52px;
+  }
+}
+
 .header-container__logo-text {
   display: block;
   padding: 24px 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .header-container__toggle {
   display: block;
   padding: 24px 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
