@@ -5,6 +5,10 @@
 .header-container__logo-image {
   display: block;
   padding: 10px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 25px 0 0;
+  }
 }
 
 .header-container__logo-image--device {
@@ -17,7 +21,7 @@
 
 .header-container__logo-text {
   display: block;
-  padding: 24px 0;
+  padding: 23px 0;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -26,7 +30,8 @@
 
 .header-container__toggle {
   display: block;
-  padding: 24px 0;
+  padding: 23px 0;
+  width: 24px;
 
   @media (min-width: @tablet-width) {
     display: none;
