@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
@@ -13,7 +14,7 @@
   <header class="main-header">
     <div class="main-header__container header-container">
       <a class="header-container__logo-image" href="index.html">
-        <img src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи.">
+        <img class="header-container__logo-image--device" src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи.">
       </a>
       <a class="header-container__logo-text" href="index.html">
         <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat energy.">
@@ -22,21 +23,19 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
-    <div class="main-header__nav">
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__item--link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item--link" href="#">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item--link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="main-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__item--link" href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item--link" href="#">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__item--link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main class="main-container">

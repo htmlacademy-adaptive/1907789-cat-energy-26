@@ -8,11 +8,16 @@
 
 .main-nav__list {
   .list-style();
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 440px;
+    min-width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 478px;
   }
 
 }
@@ -30,11 +35,22 @@
   background-color: @white;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 500;
   padding: 23px 0;
   border-top: 1px solid @border-nav;
 
   @media (min-width: @tablet-width) {
     border: none;
     padding: 25px 0 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 53px 0px 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
   }
 }
