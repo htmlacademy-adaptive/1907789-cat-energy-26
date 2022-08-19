@@ -1,33 +1,35 @@
 .description {
   display: flex;
   flex-direction: column;
+  min-width: 320px;
+  width: 100%;
 }
 
 .description__wrapper {
-  .wrapper();
+  min-width: 280px;
+  width: calc(100% - 40px);
+  padding: 0 20px;
 }
 
 .description__title {
   .titles36();
+  padding-top: 20px;
 }
 
 
 .description__list {
   .list-style();
-  width: 280px;
+  min-width: 280px;
   display: grid;
   row-gap: 20px;
+  padding-bottom: 49px;
 }
 
 .description__item {
   width: 100%;
   display: grid;
-  grid-template-columns: 60px 200px;
+  grid-template-columns: 60px 1fr;
   column-gap: 20px;
-}
-
-.description__item:last-child {
-  padding-bottom: 35px;
 }
 
 .description__icon {
@@ -43,6 +45,6 @@
   line-height: 18px;
   text-align: left;
   color: @dark-grey;
-  width: 200px;
+  min-width: 200px;
   margin: 0;
 }
