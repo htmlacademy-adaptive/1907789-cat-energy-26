@@ -3,7 +3,6 @@
   min-width: 320px;
   color: @white;
   text-align: center;
-  padding: 0 30px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -25,6 +24,7 @@
   padding: 27px 20px;
   min-width: 280px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     align-items: flex-start;
@@ -128,8 +128,8 @@
     content: url("/img/promo-image-desktop.png");
     height: 499px;
     width: 552px;
-    left: calc(558px - @padding-desktop);
-    top: calc(141px - 114px);
+    left: 448px;
+    top: 27px;
     z-index: 0;
   }
 }
