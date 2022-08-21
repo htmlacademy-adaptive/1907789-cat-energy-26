@@ -1,17 +1,30 @@
 .aditional-product {
-  width: 320px;
+  min-width: 320px;
   padding-top: 25px;
   padding-bottom: 19px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
+
 }
 
 .aditional-product__title {
-  .wrapper();
   .titles24();
+  margin: 0;
   font-family: "Oswald", sans-serif;
   text-align: left;
-  padding-bottom: 36px;
-}
 
-.aditional-product__wrapper {
-  .wrapper();
+  @media (min-width: @tablet-width) {
+    line-height: 36px;
+  }
+
 }
