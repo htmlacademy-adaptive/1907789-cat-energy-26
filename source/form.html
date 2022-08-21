@@ -54,7 +54,7 @@
             <ul class="cat-data__list">
               <li class="cat-data__item">
                 <label class="item-name item-name--cat-data" for="username">Имя:*</label>
-                <input class="cat-data__input-box input-box" type="text" name="username" id="username" placeholder="КЕКСИК" required>
+                <input class="cat-data__input-box input-box" type="text" name="username" id="username" placeholder="БАРСИК" required>
               </li>
               <li class="cat-data__item">
                 <label class="item-name item-name--cat-data" for="weight-cat">Вес (кг):*</label>
@@ -71,7 +71,7 @@
               <legend class="visually-hidden">Выбор программы</legend>
               <ul class="choice-program__list">
                 <li class="choice-program__item">
-                  <input class="choice-program__radio-button radio-button" type="radio" name="program" id="weight-loss" value="weight-loss" >
+                  <input class="choice-program__radio-button radio-button" type="radio" name="program" id="weight-loss" value="weight-loss" checked>
                   <label class="item-name item-name--choice-program" for="weight-loss">Похудение</label>
                 </li>
                 <li class="choice-program__item">
@@ -88,22 +88,18 @@
         <!-- Контактные данные владельца -->
         <section class="form-selection__contact">
           <fieldset class="contact">
-            <legend class="contact__title">Контактные данные<br>
+            <legend class="contact__title">Контактные данные
               (владельца кота)</legend>
             <ul class="contact__list">
               <li class="contact__item contact-owner">
                 <label class="contact-owner__label-name" for="email">E-mail:*</label>
                 <!-- див для вставки и позиционирования иконки с помощью псевдоэлемента after -->
-                <div class="contact-owner__icon contact-owner__icon--email">
-                  <input class="contact-owner__field contact-owner__field--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required >
-                </div>
+                <input class="contact-owner__field contact-owner__field--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required >
               </li>
               <li class="contact__item contact-owner">
                 <label class="contact-owner__label-name"  for="phone-number">Телефон:*</label>
                 <!-- див для вставки и позиционирования иконки с помощью псевдоэлемента after -->
-                <div class="contact-owner__icon contact-owner__icon--phone-number">
-                  <input class="contact-owner__field contact-owner__field--phone-number" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required >
-                </div>
+                <input class="contact-owner__field contact-owner__field--phone-number" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required >
               </li>
             </ul>
           </fieldset>

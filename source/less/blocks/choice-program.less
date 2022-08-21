@@ -1,5 +1,14 @@
 .choice-program {
   .form-font();
+
+  @media (min-width: @tablet-width) {
+    padding: 25px;
+    border: 1px solid @border-form
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .choice-program__list {
@@ -7,6 +16,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   row-gap: 13px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .choice-program__item {
