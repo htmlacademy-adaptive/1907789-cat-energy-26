@@ -25,12 +25,11 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 0px 41px;
     padding-bottom: 6px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    padding: 66px 0;
   }
 }
 
@@ -43,7 +42,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    padding: 0;
   }
 }
 
@@ -54,7 +53,16 @@
 
 .form-selection__additionally {
   display: grid;
-  row-gap: 34px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 82px;
+  }
+
 }
 
 .form-selection__additionally--notation {
@@ -63,4 +71,12 @@
   font-weight: 400;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2/3;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+  }
 }
