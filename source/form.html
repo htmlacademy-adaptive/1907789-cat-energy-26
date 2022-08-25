@@ -49,37 +49,37 @@
         <section class="form-selection__selection-task selection-task">
           <h2 class="visually-hidden">Форма подбора программы</h2>
           <!-- Блок для ввода данных кота -->
-          <fieldset class="selection-task__cat-data cat-data">
+          <fieldset class="cat-data">
             <legend class="visually-hidden">Данные кота</legend>
             <ul class="cat-data__list">
               <li class="cat-data__item">
                 <label class="item-name item-name--cat-data" for="username">Имя:*</label>
-                <input class="cat-data__input-box input-box" type="text" name="username" id="username" placeholder="БАРСИК" required>
+                <input class="cat-data__input-box" type="text" name="username" id="username" placeholder="БАРСИК" required>
               </li>
               <li class="cat-data__item">
                 <label class="item-name item-name--cat-data" for="weight-cat">Вес (кг):*</label>
-                <input class="cat-data__input-box input-box" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
+                <input class="cat-data__input-box" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
               </li>
               <li class="cat-data__item">
                 <label class="item-name item-name--cat-data" for="age">Возраст (лет):</label>
-                <input class="cat-data__input-box input-box" type="number" name="age" id="age" placeholder="7">
+                <input class="cat-data__input-box" type="number" name="age" id="age" placeholder="7">
               </li>
             </ul>
           </fieldset>
           <!-- Чекбоксы  для вбора целей программы -->
-          <fieldset class="selection-task__radio choice-program">
+          <fieldset class="choice-program">
               <legend class="visually-hidden">Выбор программы</legend>
               <ul class="choice-program__list">
                 <li class="choice-program__item">
-                  <input class="choice-program__radio-button radio-button" type="radio" name="program" id="weight-loss" value="weight-loss" checked>
+                  <input class="choice-program__radio-button" type="radio" name="program" id="weight-loss" value="weight-loss" checked>
                   <label class="item-name item-name--choice-program" for="weight-loss">Похудение</label>
                 </li>
                 <li class="choice-program__item">
-                  <input class="choice-program__radio-button radio-button" type="radio" name="program" id="fatten" value="fatten">
+                  <input class="choice-program__radio-button" type="radio" name="program" id="fatten" value="fatten">
                   <label class="item-name item-name--choice-program" for="fatten">Набор массы</label>
                 </li>
                 <li class="choice-program__item">
-                  <input class="choice-program__radio-button radio-button" type="radio" name="program" id="undecided" value="undecided">
+                  <input class="choice-program__radio-button" type="radio" name="program" id="undecided" value="undecided">
                   <label class="item-name item-name--choice-program" for="undecided">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
