@@ -27,7 +27,7 @@
 
 .header-container__logo-text {
   display: block;
-  padding: 23px 0;
+  padding: 21px 0;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -35,11 +35,49 @@
 }
 
 .header-container__toggle {
+  position: relative;
   display: block;
   padding: 23px 0;
   width: 24px;
+  border: none;
+  background-color: transparent;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.header-container__toggle--closed::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: @black;
+  box-shadow: 0 8px 0 0 @black, 0 -8px 0 0 @black;
+}
+
+.header-container__toggle--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: @black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.header-container__toggle--nojs {
+  display: none;
 }
