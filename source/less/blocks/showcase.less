@@ -1,8 +1,16 @@
 .showcase {
   display: flex;
-  grid-column: 1/-1;
-  width: 280px;
+  grid-column: auto;
+  min-width: 280px;
   background-color: @showcase;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/-1;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    right: 0;
+  }
 }
 
 .showcase__slide-before {

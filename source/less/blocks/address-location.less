@@ -1,9 +1,17 @@
 .address-location {
+  min-width: 320px;
   width: 100%;
   background-color: @white;
+  margin: 0 auto;
 }
 
 .address-location__map {
   display: block;
   border: none;
+  width: 100%;
+  min-height: 362px;
+
+  @media (min-width: @tablet-width) {
+    min-height: 400px;
+  }
 }

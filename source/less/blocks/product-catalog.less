@@ -1,17 +1,28 @@
 .product-catalog {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  min-width: 320px;
   background-color: @white;
-  padding-top: 27px;
-  padding-bottom: 25px;
-}
+  padding: 26px 20px;
+  width: 100%;
+  box-sizing: border-box;
 
-.product-catalog__wrapper {
-  .wrapper();
+  @media (min-width: @tablet-width) {
+    padding: 67px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 75px 110px;
+  }
 }
 
 .product-catalog__title {
   .titles24();
   line-height: 36px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

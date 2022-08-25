@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -11,7 +12,7 @@
     <header class="main-header">
       <div class="main-header__container header-container">
         <a class="header-container__logo-image" href="index.html">
-          <img src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи.">
+          <img class="header-container__logo-image--device" src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи.">
         </a>
         <a class="header-container__logo-text" href="index.html">
           <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Cat energy.">
@@ -20,21 +21,19 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-      <div class="main-header__nav">
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__item--link" href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item--link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__item--link" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="main-header__nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
 
@@ -50,37 +49,37 @@
         <section class="form-selection__selection-task selection-task">
           <h2 class="visually-hidden">Форма подбора программы</h2>
           <!-- Блок для ввода данных кота -->
-          <fieldset class="selection-task__cat-data cat-data">
+          <fieldset class="cat-data">
             <legend class="visually-hidden">Данные кота</legend>
             <ul class="cat-data__list">
               <li class="cat-data__item">
                 <label class="item-name item-name--cat-data" for="username">Имя:*</label>
-                <input class="cat-data__input-box input-box" type="text" name="username" id="username" placeholder="КЕКСИК" required>
+                <input class="cat-data__input-box" type="text" name="username" id="username" placeholder="БАРСИК" required>
               </li>
               <li class="cat-data__item">
                 <label class="item-name item-name--cat-data" for="weight-cat">Вес (кг):*</label>
-                <input class="cat-data__input-box input-box" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
+                <input class="cat-data__input-box" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
               </li>
               <li class="cat-data__item">
                 <label class="item-name item-name--cat-data" for="age">Возраст (лет):</label>
-                <input class="cat-data__input-box input-box" type="number" name="age" id="age" placeholder="7">
+                <input class="cat-data__input-box" type="number" name="age" id="age" placeholder="7">
               </li>
             </ul>
           </fieldset>
           <!-- Чекбоксы  для вбора целей программы -->
-          <fieldset class="selection-task__radio choice-program">
+          <fieldset class="choice-program">
               <legend class="visually-hidden">Выбор программы</legend>
               <ul class="choice-program__list">
                 <li class="choice-program__item">
-                  <input class="choice-program__radio-button radio-button" type="radio" name="program" id="weight-loss" value="weight-loss" >
+                  <input class="choice-program__radio-button" type="radio" name="program" id="weight-loss" value="weight-loss" checked>
                   <label class="item-name item-name--choice-program" for="weight-loss">Похудение</label>
                 </li>
                 <li class="choice-program__item">
-                  <input class="choice-program__radio-button radio-button" type="radio" name="program" id="fatten" value="fatten">
+                  <input class="choice-program__radio-button" type="radio" name="program" id="fatten" value="fatten">
                   <label class="item-name item-name--choice-program" for="fatten">Набор массы</label>
                 </li>
                 <li class="choice-program__item">
-                  <input class="choice-program__radio-button radio-button" type="radio" name="program" id="undecided" value="undecided">
+                  <input class="choice-program__radio-button" type="radio" name="program" id="undecided" value="undecided">
                   <label class="item-name item-name--choice-program" for="undecided">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
@@ -89,22 +88,16 @@
         <!-- Контактные данные владельца -->
         <section class="form-selection__contact">
           <fieldset class="contact">
-            <legend class="contact__title">Контактные данные<br>
+            <legend class="contact__title">Контактные данные
               (владельца кота)</legend>
             <ul class="contact__list">
-              <li class="contact__item contact-owner">
-                <label class="contact-owner__label-name" for="email">E-mail:*</label>
-                <!-- див для вставки и позиционирования иконки с помощью псевдоэлемента after -->
-                <div class="contact-owner__icon contact-owner__icon--email">
-                  <input class="contact-owner__field contact-owner__field--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required >
-                </div>
+              <li class="contact__item">
+                <label class="contact__item contact__item--label-name" for="email">E-mail:*</label>
+                <input class="contact__item--field contact__item--field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required >
               </li>
-              <li class="contact__item contact-owner">
-                <label class="contact-owner__label-name"  for="phone-number">Телефон:*</label>
-                <!-- див для вставки и позиционирования иконки с помощью псевдоэлемента after -->
-                <div class="contact-owner__icon contact-owner__icon--phone-number">
-                  <input class="contact-owner__field contact-owner__field--phone-number" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required >
-                </div>
+              <li class="contact__item contact-item">
+                <label class="contact__item contact__item--label-name"  for="phone-number">Телефон:*</label>
+                <input class="contact__item--field contact__item--field" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required >
               </li>
             </ul>
           </fieldset>
@@ -146,18 +139,20 @@
       <!-- Блок с адресом -->
       <div class="address address--gray">
         <div class="address__wrapper">
-          <p class="address__partnership">приглашаем<br>
-            к сотрудничеству<br>
+          <p class="address__partnership">приглашаем
+            к сотрудничеству
             дилеров!
           </p>
-          <address class="address__address-location">ул. Большая<br>
-            Конюшенная, д. 19/8 <br>
+          <address class="address__address-location">ул. Большая
+            Конюшенная, д. 19/8
             Санкт-Петербург
           </address>
         </div>
         <!-- Карта -->
         <div class="address-location">
-          <img class="address-location__map" src="img/location.jpg" width="320" height="362" alt="Карта">
+          <iframe class="address-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226084133169!2d30.31522021584301!3d59.96826598188693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1660486981407!5m2!1sru!2sru"
+           width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!-- <img class="address-location__map" src="img/location.jpg" width="320" height="362" alt="Карта"> -->
         </div>
       </div>
     </main>
