@@ -41,3 +41,12 @@
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
 }
+
+.button-hover() {
+  background-color: @button-hover;
+}
+
+.button-active() {
+  .button-hover();
+  color: fade(@white, 30%);
+}
