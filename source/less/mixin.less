@@ -42,11 +42,20 @@
   box-sizing: border-box;
 }
 
-.button-hover() {
-  background-color: @button-hover;
+//hover
+.button-hover(@background-color) {
+  background-color: @background-color;
 }
 
-.button-active() {
-  .button-hover();
-  color: fade(@white, 30%);
+.link-hover(@color) {
+  color: fade(@color, 60%);
+}
+
+//active
+.button-active(@color) {
+  color: fade(@color, 30%);
+}
+
+.link-active(@color) {
+  color: fade(@color, 30%);
 }

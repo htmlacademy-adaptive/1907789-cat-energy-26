@@ -19,7 +19,7 @@
   }
 }
 
-.product-card-item:not(.product-card-item--additional)::after {
+.product-card-item:not(.product-card-item--additional):not(:last-child)::after {
   @media (min-width: @tablet-width) {
     content: "";
     width: 100%;
