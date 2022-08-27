@@ -1,14 +1,30 @@
 .showcase {
+  position: relative;
   display: flex;
   min-width: 280px;
-  background-color: @showcase;
   justify-content: center;
   align-items: center;
   grid-column: 1/-1;
 
+  @media (min-width: @tablet-width) {
+    height: 613px;
+  }
+
   @media (min-width: @desktop-width) {
     position: absolute;
     right: 0;
+  }
+}
+
+.showcase::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    width: calc(100% + 60px);
+    height: 462px;
+    background-color: @showcase;
+    bottom: 0;
+    z-index: 0;
   }
 }
 
