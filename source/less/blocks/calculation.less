@@ -7,7 +7,7 @@
   z-index: 1;
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 1fr 1fr 50%;
+    grid-template-columns: 1fr 1fr;
     row-gap: 54px;
     column-gap: 42px;
   }
@@ -40,6 +40,17 @@
   }
 }
 
+.calculation__container {
+  grid-column: 1/-1;
+  display: grid;
+  column-gap: 32px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 1/2;
+    column-gap: 42px;
+  }
+}
+
 .calculation__info {
   position: relative;
   display: block;
@@ -55,12 +66,14 @@
   border: 1px solid @special-grey;
   border-radius: 3px;
   background-color: @showcase;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     min-width: 162px;
     font-size: 30px;
     line-height: 37px;
     background-color: @white;
+    align-self: baseline;
   }
 
   @media (min-width: @desktop-width) {
@@ -98,10 +111,6 @@
 
 .calculation__info--day {
   grid-column: 2/3;
-
-  @media (min-width: @desktop-width) {
-    grid-column: 2/3;
-  }
 }
 
 .calculation__spent {
@@ -120,6 +129,9 @@
     justify-content: end;
     flex-direction: column;
     align-items: flex-end;
+    line-height: 30px;
+    align-self: center;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {

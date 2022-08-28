@@ -1,6 +1,10 @@
 .description {
   min-width: 320px;
   width: 100%;
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    border-bottom: 1px solid @border-nav;
+  }
 }
 
 .description__wrapper {
