@@ -15,6 +15,7 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
+    padding-top: 43px;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,9 +25,28 @@
 
 .live-example__title {
   .titles36();
+  font-size: 60px;
+  line-height: 60px;
 }
 
 .live-example__calculation {
   padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 63px;
+  }
+}
+
+.live-example__calculation::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    height: 462px;
+    background-color: @showcase;
+    bottom: 0;
+    z-index: -3;
+    left: -30px;
+    right: -30px;
+  }
 }
