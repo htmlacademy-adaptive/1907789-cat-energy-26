@@ -6,21 +6,26 @@
   height: 256px;
   justify-content: center;
   align-items: center;
-  grid-column: 1/-1;
+  grid-column: -1/-2;
 
   @media (min-width: @tablet-width) {
     height: 613px;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    right: 0;
+    height: 0;
+    grid-row: 4/3;
+    justify-content: flex-end;
   }
 }
 
 .showcase__image {
   position: absolute;
   z-index: -2;
+
+  @media (min-width: @desktop-width) {
+    bottom: 0%;
+  }
 }
 
 .showcase__curtain {
