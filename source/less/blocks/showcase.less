@@ -5,7 +5,7 @@
   height: 256px;
   justify-content: center;
   align-items: center;
-  grid-column: -1/-2;
+  grid-column: 1/-1;
 
 
   @media (min-width: @tablet-width) {
@@ -14,9 +14,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 0;
-    grid-row: 4/3;
-    justify-content: flex-end;
+    position: absolute;
+    height: 512px;
+    width: 560px;
+    grid-row: 4/1;
+    grid-column: 2/3;
+    bottom: 0;
+    right: 0;
+    display: flex;
   }
 }
 
@@ -25,7 +30,6 @@
   z-index: -2;
 
   @media (min-width: @desktop-width) {
-    bottom: 0%;
   }
 }
 
