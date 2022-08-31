@@ -1,8 +1,20 @@
 .social {
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
 }
+
+.social::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 20px);
+  height: 5px;
+  background-color: #d9d9d9;
+  bottom: 0;
+  left: 0;
+}
+
 
 .social__list {
   display: flex;
