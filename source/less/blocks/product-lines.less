@@ -123,16 +123,8 @@
 }
 
 .product-lines__advantage::after {
-  content: "";
-  position: absolute;
-  width: calc(100% - 20px);
-  height: 1px;
-  background-color: @divider;
-  bottom: 0;
-  left: 0;
-
-  @media (min-width: @tablet-width) {
-    display: none;
+  @media (max-width: 767px) {
+    .divider(0, 20px);
   }
 }
 
@@ -160,7 +152,7 @@
   }
 
   &:active {
-    .link-active(@black);
+    .link-active(@black, 30%);
   }
 
   &:active::after {

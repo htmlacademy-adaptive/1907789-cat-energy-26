@@ -47,8 +47,8 @@
   background-color: @background-color;
 }
 
-.link-hover(@color) {
-  color: fade(@color, 60%);
+.link-hover(@color, @opacity) {
+  color: fade(@color, @opacity);
 }
 
 //active
@@ -56,6 +56,17 @@
   color: fade(@color, 30%);
 }
 
-.link-active(@color) {
-  color: fade(@color, 30%);
+.link-active(@color, @opacity) {
+  color: fade(@color, @opacity);
+}
+
+//divider
+.divider(@left, @right) {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: @divider;
+  bottom: 0;
+  left: @left;
+  right: @right;
 }
