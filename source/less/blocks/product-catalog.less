@@ -17,14 +17,21 @@
 }
 
 .product-catalog__title {
-  .titles24();
+  position: relative;
+  .titles36();
   line-height: 36px;
   margin: 0;
+  padding-bottom: 41px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
+}
+
+.product-catalog__title::after {
+  .divider (-20px, -20px);
+  background-color: @border-nav;
 }
 
 .product-catalog__list {
