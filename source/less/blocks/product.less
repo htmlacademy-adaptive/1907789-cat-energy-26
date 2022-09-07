@@ -62,16 +62,8 @@
   }
 }
 
-.product__button-more {
-  grid-column: 1/-1;
-  grid-row: 1/2;
-  border: none;
-  background-color: @white;
-}
-
 .product__more {
-  grid-column: 1/-1;
-  grid-row: 2/3;
+  padding-top: 78px;
 }
 
 .product__more--text {
@@ -105,5 +97,13 @@
 
   &:active {
     .button-active(@dark-grey);
+  }
+
+  &::after {
+    content: url("/img/plus.svg");
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

@@ -34,5 +34,7 @@
 }
 
 .main-header::after {
-  .divider(0, 0);
+  @media (max-width: 767px) {
+    .divider(0, 0);
+  }
 }
