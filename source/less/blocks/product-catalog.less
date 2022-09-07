@@ -4,6 +4,7 @@
   min-width: 320px;
   background-color: @white;
   padding: 26px 20px;
+  padding-bottom: 0;
   width: 100%;
   box-sizing: border-box;
 
@@ -40,7 +41,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   .list-style();
-  padding-bottom: 19px;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
@@ -61,7 +61,6 @@
   position: relative;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr auto;
-  row-gap: 13px;
   padding: 19px 0 25px;
 
   &::after {

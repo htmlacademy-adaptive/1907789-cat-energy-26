@@ -70,3 +70,13 @@
   left: @left;
   right: @right;
 }
+
+.line-right(@padding) {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + @padding);
+  height: 2px;
+  width: 100000%;
+  background-color: @basic-green;
+}
