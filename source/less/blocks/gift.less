@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding: 0 20px;
   padding-top: 15px;
+  padding-bottom: 35px;
 }
 
 
@@ -23,6 +24,18 @@
     height: 290px;
     min-width: 245px;
   }
+}
+
+.gift__container::before {
+  content: "";
+  width: 78px;
+  height: 80px;
+  background-image: url("/img/icon_gift.svg");
+  z-index: 1;
+  position: absolute;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .gift__container::after {
@@ -54,6 +67,7 @@
 }
 
 .gift__text {
+  position: relative;
   display: block;
   color: @white;
   font-family: "Arial", sans-serif;
@@ -62,4 +76,6 @@
   line-height: 20px;
   text-align: center;
   margin: 0;
+  z-index: 1;
+  padding-top: 187px;
 }
