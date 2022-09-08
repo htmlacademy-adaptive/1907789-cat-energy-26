@@ -3,13 +3,13 @@
   min-width: 320px;
   width: 100%;
   text-transform: uppercase;
-  margin-top: auto;
   background-color: @white;
   top: 66px;
   z-index: 1;
 
   @media (min-width: @tablet-width) {
     position: static;
+    margin-top: 42px;
     min-width: 440px;
     max-width: max-content;
   }
@@ -52,8 +52,9 @@
   box-shadow: 0 0 0 1px @border-nav;
 
   @media (min-width: @tablet-width) {
+    display: inline;
     border: none;
-    padding: 25px 0 10px;
+    padding: 25px 0 4px;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -105,7 +106,7 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    display: block;
+    display: inline;
   }
 }
 
