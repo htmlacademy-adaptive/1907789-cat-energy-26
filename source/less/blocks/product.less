@@ -22,6 +22,8 @@
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
     grid-row: 2/3;
+    margin: 0;
+    padding: 33px 0;
   }
 }
 
@@ -38,9 +40,11 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
-    padding-top: 161px;
-    padding-right: 72px;
-    padding-left: 72px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 0;
+    padding-right: 50px;
+    padding-left: 50px;
     text-align: center;
   }
 }
@@ -51,12 +55,29 @@
   font-weight: 400;
   line-height: 16px;
   .list-style();
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    display: grid;
+    row-gap: 7px;
+  }
 }
 
 .product__card-description-item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   color: @dark-grey;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 9px;;
+  }
+}
+
+.product__card-description-item::after {
+  @media (min-width: @tablet-width) {
+    .divider(0, 0);
+  }
 }
 
 .product__button {
