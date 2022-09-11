@@ -1,11 +1,19 @@
 .gift {
-  min-width: 320px;
+  min-width: 280px;
   box-sizing: border-box;
-  padding: 0 20px;
-  padding-top: 15px;
+  padding-top: 35px;
   padding-bottom: 35px;
-}
 
+  @media (min-width: @tablet-width) {
+    padding-top: 69px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 245px;
+    padding: 0;
+  }
+}
 
 .gift__container {
   position: relative;
@@ -15,12 +23,15 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
     height: 200px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-column: -1/-2;
-    grid-row: 1/-1;
+    flex-direction: column-reverse;
+    padding-bottom: 42px;
     height: 290px;
     min-width: 245px;
   }
@@ -36,6 +47,18 @@
   top: 59px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: @tablet-width) {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 55px;
+    transform: translate(-50%, 0);
+    left: 50%;
+  }
 }
 
 .gift__container::after {
@@ -61,8 +84,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    background-image: linear-gradient(rgba(@basic-green, 0.85), rgba(@basic-green, 0.85)),
+    url("/img/cat-gift.png");
     height: 290px;
     min-width: 245px;
+    width: 245px;
   }
 }
 
@@ -78,4 +104,14 @@
   margin: 0;
   z-index: 1;
   padding-top: 187px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 124px;
+    padding-top: 0;
+    text-align: left;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    text-align: center;
+  }
 }

@@ -12,15 +12,49 @@
   .list-style();
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  row-gap: 13px;
+  row-gap: 25px;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr;
   }
 }
 
-.choice-program__item {
+.choice-program__label {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
+  padding-left: 40px;
+}
+
+.choice-program__radio-button {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 1px solid @special-grey;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.choice-program__input {
+  &:hover + .choice-program__radio-button {
+    border-color: @dark-grey-radio;
+  }
+
+  &:checked + .choice-program__radio-button::after {
+  content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 13px;
+    height: 13px;
+    background-color: @basic-green;
+    border-radius: 50%;
+  }
 }
