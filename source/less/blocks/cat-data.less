@@ -1,7 +1,15 @@
 .cat-data {
+  position: relative;
   .form-font();
   border: none;
   margin: 0;
+}
+
+.cat-data&::after {
+  @media (max-width: 767px) {
+    .divider(-20px, -20px);
+    bottom: -24px;
+  }
 }
 
 .cat-data__list {

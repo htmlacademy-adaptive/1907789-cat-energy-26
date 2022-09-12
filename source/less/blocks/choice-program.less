@@ -1,10 +1,18 @@
 .choice-program {
+  position: relative;
   .form-font();
   border: none;
 
   @media (min-width: @tablet-width) {
     padding: 25px;
     border: 1px solid @border-form;
+  }
+}
+
+.choice-program::after {
+  @media (max-width: 767px) {
+    .divider(-20px, -20px);
+    bottom: -19px;
   }
 }
 
@@ -37,7 +45,7 @@
   box-sizing: border-box;
   border: 1px solid @special-grey;
   left: 0;
-  top: 50%;
+  top: 0.5rem;
   transform: translateY(-50%);
 }
 
@@ -56,5 +64,13 @@
     height: 13px;
     background-color: @basic-green;
     border-radius: 50%;
+  }
+
+  &:disabled + .choice-program__radio-button {
+    border-color: fade(@dark-grey-radio, 30%);
+  }
+
+  &:disabled ~ .choice-program__item-name {
+    color: fade(@dark-grey-radio, 30%);
   }
 }
