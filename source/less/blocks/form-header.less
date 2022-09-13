@@ -12,7 +12,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 65px 30px;
+    padding: 65px 69px;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,6 +24,15 @@
   font-size: 36px;
   line-height: 36px;
   .titles36();
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .form-header__instruction {
@@ -33,5 +42,15 @@
   text-align: left;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 39px;
+  padding-top: 53px;
+  font-family: Oswald;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }

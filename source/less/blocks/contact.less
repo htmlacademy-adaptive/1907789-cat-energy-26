@@ -1,6 +1,8 @@
 .contact {
   border: none;
+  position: relative;
   padding: 0;
+  margin: 0;
 }
 
 .contact__title {
@@ -28,17 +30,41 @@
 }
 
 .contact__item {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
   align-items: center;
 }
 
-.contact__item--label-name {
-  flex-shrink: 0;
+.contact__input-box {
+  padding-right: 40px;
+}
+.contact__input-container {
+  display: block;
+  position: relative;
 }
 
-.contact__item--field {
-  .input-box();
-  flex-shrink: 1;
-  width: 100%;
+.contact__input-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0;
+  margin-bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact__input-container--email::before {
+  right: 20px;
+  background-image: url("/img/icon_email.svg");
+  width: 18px;
+  height: 13px;
+}
+
+.contact__input-container--phone::before {
+  right: 13px;
+  background-image: url("/img/icon_phone.svg");
+  width: 20px;
+  height: 20px;
 }

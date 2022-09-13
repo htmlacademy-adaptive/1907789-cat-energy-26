@@ -53,16 +53,16 @@
             <legend class="visually-hidden">Данные кота</legend>
             <ul class="cat-data__list">
               <li class="cat-data__item">
-                <label class="item-name item-name--cat-data" for="username">Имя:*</label>
-                <input class="cat-data__input-box" type="text" name="username" id="username" placeholder="БАРСИК" required>
+                <label class="cat-data__item-label" for="username">Имя:*</label>
+                <input class="input-box cat-data__input-box" type="text" name="username" id="username" placeholder="БАРСИК" required>
               </li>
               <li class="cat-data__item">
-                <label class="item-name item-name--cat-data" for="weight-cat">Вес (кг):*</label>
-                <input class="cat-data__input-box" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
+                <label class="cat-data__item-label" for="weight-cat">Вес (кг):*</label>
+                <input class="input-box cat-data__input-box" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
               </li>
               <li class="cat-data__item">
-                <label class="item-name item-name--cat-data" for="age">Возраст (лет):</label>
-                <input class="cat-data__input-box" type="number" name="age" id="age" placeholder="7">
+                <label class="cat-data__item-label" for="age">Возраст (лет):</label>
+                <input class="input-box cat-data__input-box" type="number" name="age" id="age" placeholder="7">
               </li>
             </ul>
           </fieldset>
@@ -101,12 +101,16 @@
               (владельца кота)</legend>
             <ul class="contact__list">
               <li class="contact__item">
-                <label class="contact__item contact__item--label-name" for="email">E-mail:*</label>
-                <input class="contact__item--field contact__item--field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required >
+                <label class="contact__item-label" for="email">E-mail:*</label>
+                <div class="contact__input-container contact__input-container--email">
+                  <input class="input-box contact__input-box" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                </div>
               </li>
               <li class="contact__item contact-item">
-                <label class="contact__item contact__item--label-name"  for="phone-number">Телефон:*</label>
-                <input class="contact__item--field contact__item--field" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required >
+                <label class="contact__item-label"  for="phone-number">Телефон:*</label>
+                <div class="contact__input-container contact__input-container--phone">
+                  <input class="input-box contact__input-box" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required>
+                </div>
               </li>
             </ul>
           </fieldset>
@@ -123,20 +127,32 @@
             <legend class="additionally__title">Дополнительно</legend>
             <ul class="additionally__list">
               <li class="additionally__item">
-                <input class="additionally__checkbox" type="checkbox" name="additionally" id="sugar" value="sugar" checked>
-                <label class="item-name item-name--additionally" for="sugar">сахарозаменитель</label>
+                <label class="additionally__label" for="sugar">
+                  <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="sugar" value="sugar" checked>
+                  <span class="additionally__checkbox"></span>
+                  <span class="additionally__item-name">сахарозаменитель</span>
+                </label>
               </li>
               <li class="additionally__item">
-                <input class="additionally__checkbox" type="checkbox" name="additionally" id="water" value="water">
-                <label class="item-name item-name--additionally" for="water">питьевая вода</label>
+                <label class="additionally__label" for="water">
+                  <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="water" value="water">
+                  <span class="additionally__checkbox"></span>
+                  <span class="additionally__item-name">питьевая вода</span>
+                </label>
               </li>
               <li class="additionally__item">
-                <input class="additionally__checkbox" type="checkbox" name="additionally" id="milk" value="milk">
-                <label class="item-name item-name--additionally" for="milk">молоко</label>
+                <label class="additionally__label" for="milk">
+                  <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="milk" value="milk">
+                  <span class="additionally__checkbox"></span>
+                  <span class="additionally__item-name">молоко</span>
+                </label>
               </li>
               <li class="additionally__item">
-                <input class="additionally__checkbox" type="checkbox" name="additionally" id="vitamins" value="vitamins">
-                <label class="item-name item-name--additionally" for="vitamins">витамины</label>
+                <label class="additionally__label" for="vitamins">
+                  <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="vitamins" value="vitamins">
+                  <span class="additionally__checkbox"></span>
+                  <span class="additionally__item-name">витамины</span>
+                </label>
               </li>
             </ul>
           </fieldset>
