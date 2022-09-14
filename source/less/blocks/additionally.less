@@ -8,6 +8,7 @@
   position: relative;
   .titles24();
   text-transform: none;
+  color: @black;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -80,14 +81,14 @@
   }
 
   &:checked + .additionally__checkbox::after {
-  content: "";
+    content: "";
     position: absolute;
     background-image: url("/img/tick.svg");
     background-repeat: no-repeat;
     background-position: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 26px;
     height: 26px;
   }
