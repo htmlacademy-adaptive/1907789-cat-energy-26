@@ -2,6 +2,7 @@
   min-width: 280px;
   display: grid;
   row-gap: 23px;
+  overflow-x: hidden;
 }
 
 .form-selection__wrapper {
@@ -10,7 +11,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 0px 70px;
+    padding: 0px 30px;
     padding-bottom: 72px;
   }
 
@@ -28,6 +29,8 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 6px;
+    padding-left: 40px;
+    padding-right: 37px;
     row-gap: 72px;
   }
 
@@ -39,11 +42,14 @@
 }
 
 .form-selection__contact {
+  box-sizing: border-box;
   background-color: @white;
   width: 100%;
 
   @media (min-width: @tablet-width) {
-    padding: 35px 30px;
+    padding-top: 35px;
+    padding-left: 40px;
+    padding-right: 37px;
   }
 
   @media (min-width: @desktop-width) {
@@ -54,6 +60,11 @@
 .form-selection__comment {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    padding-right: 37px;
+  }
 }
 
 .form-selection__additionally {
@@ -62,6 +73,8 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+    padding-left: 40px;
+    padding-right: 37px;
   }
 
   @media (min-width: @desktop-width) {

@@ -8,10 +8,21 @@
   position: relative;
   .titles24();
   text-transform: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .additionally__title::after {
   .line-right(22px);
+}
+
+.additionally__title::before {
+  @media (min-width: @tablet-width) {
+    .line-left();
+  }
 }
 
 .additionally__list {
@@ -19,6 +30,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   row-gap: 25px;
+  column-gap: 25px;
   padding-top: 40px;
   padding-bottom: 38px;
 

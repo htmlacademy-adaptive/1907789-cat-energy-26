@@ -3,10 +3,25 @@
   .titles24();
   margin-bottom: 37px;
   width: fit-content;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .comment__title::after {
   .line-right(22px);
+}
+
+.comment__title::before {
+  @media (min-width: @tablet-width) {
+    .line-left();
+  }
 }
 
 .comment__textarea {
