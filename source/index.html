@@ -45,9 +45,6 @@
         <h1 class="visually-hidden">Кэт энерджи-чистая энергия!</h1>
           <!-- Промо блок -->
         <section class="promo">
-          <!-- <div class="promo__backdrop backdrop">
-            <div class="promo__backdrop-owerlay backdrop-owerlay"></div>
-          </div> -->
           <div class="promo__wrapper">
             <h2 class="promo__title">
               Функциональное питание для котов
@@ -70,7 +67,6 @@
                 <div class="circle">
                   <img class="circle__cat" src="img/cat-slim.svg" width="36" height="50" alt="Кот стройный.">
                 </div>
-                <!-- alt под вопросом -->
                 <h3 class="product-lines__title">Похудение</h3>
                 <p class="product-lines__advantage">Ваш кот весит больше собаки и
                   почти утратил способность лазить
@@ -79,7 +75,6 @@
                   питомцу сбросить лишний вес.</p>
                   <a class="product-lines__select" href="#">
                     <p class="product-lines__select-name">Каталог slim</p>
-                    <!-- скорее всего здесь нужен модификатор (стрелка мобильной версии на другом расстоянии) -->
                   </a>
               </li>
               <li class="product-lines__item" >
@@ -95,7 +90,6 @@
                   необходимые мышцы!</p>
                   <a class="product-lines__select" href="#">
                     <p class="product-lines__select-name">Каталог pro</p>
-                    <!-- скорее всего здесь нужен модификатор (стрелка мобильной версии на другом расстоянии) -->
                   </a>
               </li>
             </ul>
@@ -166,7 +160,12 @@
                 <span>15 000 РУБ.</span>
               </p>
               <div class="showcase">
-                <img class="showcase__image showcase__image-before" src="img/cat-before.png" width="280" height="256" alt="Толстый кот.">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/promo-image-desktop.png 1x, img/promo-image-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/promo-image-tablet.png 1x, img/promo-image-tablet@2x.png 2x">
+                  <img class="promo__image" src="img/promo-image.png" srcset="img/promo-image@2x.png 2x" width="280" height="270" alt="Cat energy pro с курицей">
+                  <img class="showcase__image showcase__image-before" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" width="280" height="256" alt="Толстый кот.">
+                </picture>
                 <img class="showcase__image showcase__image-after" src="img/cat-after.png" width="280" height="256" alt="Стройны кот.">
                 <div class="showcase__curtain">
                   <svg class="showcase__arrow" width="24" height="18" viewBox="0 0 24 18" fill="#666666" xmlns="http://www.w3.org/2000/svg">
