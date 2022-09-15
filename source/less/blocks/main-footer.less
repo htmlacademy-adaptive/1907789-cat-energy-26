@@ -14,17 +14,27 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 30px;
+    padding: 30px 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    padding: 30px 110px;
   }
 }
 
 .main-footer__logo-text {
   display: block;
-  padding: 35px 0;
+  padding-top: 39px;
+  padding-bottom: 32px;
+  width: fit-content;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-footer__logo-text--image {

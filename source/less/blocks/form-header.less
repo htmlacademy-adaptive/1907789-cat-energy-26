@@ -12,11 +12,11 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 65px 30px;
+    padding: 65px 69px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
+    padding: 73px 110px 0;
   }
 }
 
@@ -24,12 +24,25 @@
   font-size: 36px;
   line-height: 36px;
   .titles36();
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-header__instruction {
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 53px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

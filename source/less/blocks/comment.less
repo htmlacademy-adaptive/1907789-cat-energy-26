@@ -1,6 +1,27 @@
 .comment__title {
+  position: relative;
   .titles24();
   margin-bottom: 37px;
+  width: fit-content;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.comment__title::after {
+  .line-right(22px);
+}
+
+.comment__title::before {
+  @media (min-width: @tablet-width) {
+    .line-left();
+  }
 }
 
 .comment__textarea {
@@ -13,8 +34,4 @@
   padding-left: 15px;
   padding-bottom: 0;
   box-sizing: border-box;
-
-  @media (min-width: @desktop-width) {
-    padding: 71px 0;
-  }
 }

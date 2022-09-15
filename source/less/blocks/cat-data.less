@@ -1,22 +1,35 @@
 .cat-data {
+  position: relative;
   .form-font();
   border: none;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+.cat-data::after {
+  @media (max-width: 767px) {
+    .divider(-20px, -20px);
+    bottom: -24px;
+  }
 }
 
 .cat-data__list {
   .list-style();
   display: grid;
-  row-gap: 20px;
+  row-gap: 13px;
+
+  @media (min-width: @tablet-width) {
+    row-gap: 20px;
+  }
 }
 
 .cat-data__item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
   align-items: center;
-}
-
-.cat-data__input-box {
-  .input-box();
-  flex-shrink: 1;
-  width: 100%;
 }

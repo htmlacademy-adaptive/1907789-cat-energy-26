@@ -6,8 +6,16 @@
   display: block;
   padding: 10px 0;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: @tablet-width) {
-    padding: 25px 0 0;
+    padding: 24px 0 0;
   }
 }
 
@@ -18,7 +26,7 @@
     height: 52px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     content: url("/img/logo-desktop.png");
     height: 59px;
     width: 202px;
@@ -27,7 +35,15 @@
 
 .header-container__logo-text {
   display: block;
-  padding: 23px 0;
+  padding: 21px 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -35,11 +51,50 @@
 }
 
 .header-container__toggle {
+  position: relative;
   display: block;
   padding: 23px 0;
   width: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.header-container__toggle--closed::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: @black;
+  box-shadow: 0 8px 0 0 @black, 0 -8px 0 0 @black;
+}
+
+.header-container__toggle--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: @black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.header-container__toggle--nojs {
+  opacity: 0;
 }

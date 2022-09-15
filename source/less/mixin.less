@@ -37,7 +37,58 @@
 }
 
 .input-box() {
-  padding: 13px 20px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 20px;
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
+}
+
+//hover
+.button-hover(@background-color) {
+  background-color: @background-color;
+}
+
+.link-hover(@color, @opacity) {
+  color: fade(@color, @opacity);
+}
+
+//active
+.button-active(@color) {
+  color: fade(@color, 30%);
+}
+
+.link-active(@color, @opacity) {
+  color: fade(@color, @opacity);
+}
+
+//divider
+.divider(@left, @right) {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: @divider;
+  bottom: 0;
+  left: @left;
+  right: @right;
+}
+
+.line-right(@padding) {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: calc(100% + @padding);
+  height: 2px;
+  width: 100000%;
+  background-color: @basic-green;
+}
+
+.line-left() {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 36px);
+  height: 2px;
+  width: 100000%;
+  background-color: @basic-green;
 }

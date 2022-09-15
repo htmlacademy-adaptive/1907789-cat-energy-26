@@ -9,4 +9,12 @@
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
+
+  &:hover {
+    .button-hover(@button-hover);
+  }
+
+  &:active {
+    .button-active(@white);
+  }
 }

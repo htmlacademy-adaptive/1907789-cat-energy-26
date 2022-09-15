@@ -11,10 +11,10 @@
 .live-example__wrapper {
   min-width: 280px;
   padding: 0 20px;
-  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
+    padding-top: 43px;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,8 +24,44 @@
 
 .live-example__title {
   .titles36();
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .live-example__calculation {
+  padding-top: 40px;
   padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 63px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 146px;
+    padding-bottom: 75px;
+  }
+}
+
+.live-example__calculation::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    height: 462px;
+    background-color: @showcase;
+    bottom: -10px;
+    z-index: -3;
+    left: -30px;
+    right: -30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    height: 462px;
+    left: -110px;
+    right: -110px;
+    bottom: 0;
+  }
 }

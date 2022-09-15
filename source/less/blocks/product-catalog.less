@@ -4,11 +4,12 @@
   min-width: 320px;
   background-color: @white;
   padding: 26px 20px;
+  padding-bottom: 0;
   width: 100%;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 67px 30px;
+    padding: 58px 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,12 +18,104 @@
 }
 
 .product-catalog__title {
-  .titles24();
+  position: relative;
+  .titles36();
   line-height: 36px;
   margin: 0;
+  padding-bottom: 41px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding-bottom: 84px;
+  }
+}
+
+.product-catalog__title::after {
+  @media (max-width: 767px) {
+    .divider (-20px, -20px);
+    background-color: @border-nav;
+  }
+}
+
+.product-catalog__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  .list-style();
+  column-gap: 40px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    column-gap: 80px;
+    row-gap: 63px;
+  }
+}
+
+.product-catalog__item {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr auto;
+  padding: 19px 0 25px;
+
+  &::after {
+    @media (max-width: 767px) {
+      .divider(-20px, -20px);
+      background-color: @border-nav;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 60px;
+    padding: 39px;
+    padding-top: 0;
+    z-index: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+}
+
+.product-catalog__item:not(:last-child)::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    width: 100%;
+    height: calc(100% - 81px);
+    background-color: @basic-grey;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+}
+
+.product-catalog__item--more {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-top: 25px;
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @basic-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 19px;
+    padding-right: 19px;
   }
 }
