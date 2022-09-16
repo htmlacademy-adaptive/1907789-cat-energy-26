@@ -75,12 +75,22 @@
   left: 50%;
   transform: translateX(-50%);
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(@basic-green, 0.85), rgba(@basic-green, 0.85)),
+      url("/img/cat-gift@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: linear-gradient(rgba(@basic-green, 0.85), rgba(@basic-green, 0.85)),
-      url("/img/cat-gift-tablet.png");
+    url("/img/cat-gift-tablet.png");
     height: 200px;
     min-height: 200px;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(@basic-green, 0.85), rgba(@basic-green, 0.85)),
+        url("/img/cat-gift-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -89,6 +99,11 @@
     height: 290px;
     min-width: 245px;
     width: 245px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(@basic-green, 0.85), rgba(@basic-green, 0.85)),
+        url("/img/cat-gift@2x.jpg");
+    }
   }
 }
 
