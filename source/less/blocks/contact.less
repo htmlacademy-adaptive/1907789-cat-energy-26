@@ -57,8 +57,7 @@
   position: relative;
 }
 
-.contact__input-container::before {
-  content: "";
+.contact__input-container svg {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -68,16 +67,14 @@
   background-position: center;
 }
 
-.contact__input-container--email::before {
+.contact__input-container--email svg {
   right: 20px;
-  background-image: url("/img/icon_email.svg");
   width: 18px;
   height: 13px;
 }
 
-.contact__input-container--phone::before {
+.contact__input-container--phone svg {
   right: 13px;
-  background-image: url("/img/icon_phone.svg");
   width: 20px;
   height: 20px;
 }
