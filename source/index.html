@@ -74,7 +74,9 @@
           <ul class="product-lines__list">
             <li class="product-lines__item">
               <div class="circle">
-                <img class="circle__cat" src="img/cat-slim.svg" width="36" height="50" alt="Кот стройный.">
+                <svg class="circle__cat circle__cat--slim" width="36" height="50" alt="Кот стройный." viewBox="0 0 36 50" fill="none">
+                  <use xlink:href="img/sprite.svg#cat-slim" />
+                </svg>
               </div>
               <h3 class="product-lines__title">Похудение</h3>
               <p class="product-lines__advantage">Ваш кот весит больше собаки и
@@ -88,7 +90,9 @@
             </li>
             <li class="product-lines__item">
               <div class="circle">
-                <img class="circle__cat" src="img/cat-strong.svg" width="67" height="28" alt="Кот сильный.">
+                <svg class="circle__cat circle__cat--strong" alt="Кот сильный." width="67" height="28" viewBox="0 0 67 28" fill="none">
+                  <use xlink:href="img/sprite.svg#cat-strong" />
+                </svg>
               </div>
               <h3 class="product-lines__title">Набор массы</h3>
               <p class="product-lines__advantage">
@@ -223,23 +227,26 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg width="28" height="22" viewBox="0 0 28 22">
+              <svg aria-hidden="true" focusable="false" width="28" height="22" viewBox="0 0 28 22">
                 <use xlink:href="img/sprite.svg#vkontakte" />
               </svg>
+              <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <svg width="28" height="22" viewBox="0 0 28 22">
+              <svg aria-hidden="true" focusable="false" width="28" height="22" viewBox="0 0 28 22">
                 <use xlink:href="img/sprite.svg#youtube" />
               </svg>
+              <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <svg width="28" height="22" viewBox="0 0 28 22">
+              <svg aria-hidden="true" focusable="false" width="28" height="22" viewBox="0 0 28 22">
                 <use xlink:href="img/sprite.svg#telegram" />
               </svg>
+              <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
         </ul>
@@ -247,7 +254,7 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34" viewBox="0 0 27 34">
+          <svg aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34">
             <use xlink:href="img/sprite.svg#copyright-logo" />
           </svg>
         </a>
