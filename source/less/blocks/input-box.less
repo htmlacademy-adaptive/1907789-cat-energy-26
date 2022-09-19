@@ -16,7 +16,17 @@
     border-color: @dark-grey;
   }
 
+  &:focus + svg {
+    stroke: @basic-green;
+    fill: @basic-green;
+  }
+
   &:invalid:not(:focus):not(:placeholder-shown) {
     border-color: @status-error;
   }
+
+  &:invalid:not(:focus):not(:placeholder-shown) + svg {
+    stroke: @status-error;
+  }
 }
+

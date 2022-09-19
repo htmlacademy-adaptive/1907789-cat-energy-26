@@ -2,18 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media (min-width: @tablet-width) {
-    justify-content: end;
-  }
-
-  &:hover .copyright__link--logo {
-    fill: @basic-green;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 .copyright__link {
@@ -26,12 +14,25 @@
   text-align: left;
   padding: 22px 0;
 
-  @media (min-width: @tablet-width) {
-    padding-left: 22px;
+  &:hover + .copyright__link--logo {
+    fill: @basic-green;
+  }
+
+  &:active,
+  &:active + .copyright__link--logo {
+    opacity: 0.3;
   }
 }
 
 
 .copyright__link--logo {
   fill: @curtain-grey;
+
+  &:hover {
+    fill: @basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

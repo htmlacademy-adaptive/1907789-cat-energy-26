@@ -6,13 +6,15 @@
   @media (min-width: @tablet-width) {
     padding: 25px;
     border: 1px solid @border-form;
+    font-size: 20px;
+    line-height: 29px;
   }
 }
 
 .choice-program::after {
   @media (max-width: 767px) {
     .divider(-20px, -20px);
-    bottom: -19px;
+    bottom: -25px;
   }
 }
 
@@ -34,6 +36,10 @@
   align-items: center;
   cursor: pointer;
   padding-left: 40px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 62px;
+  }
 }
 
 .choice-program__radio-button {
@@ -47,6 +53,11 @@
   left: 0;
   top: 0.5rem;
   transform: translateY(-50%);
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .choice-program__input {
@@ -64,6 +75,11 @@
     height: 13px;
     background-color: @basic-green;
     border-radius: 50%;
+
+    @media (min-width: @tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &:disabled + .choice-program__radio-button {
