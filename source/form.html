@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
   </head>
   <body class="page-body">
     <header class="main-header">
@@ -41,134 +40,138 @@
 
 
     <main class="main-container">
-      <header class="form-header form-header__wrapper">
-        <h1 class="form-header__title">Подбор программы</h1>
-        <p class="form-header__instruction">Заполните анкету, и мы подберем<br>
-          программу питания для вашего кота
-        </p>
+      <header class="form-header">
+        <div class="form-header__wrapper">
+          <h1 class="form-header__title">Подбор программы</h1>
+          <p class="form-header__instruction">Заполните анкету, и мы подберем<br>
+            программу питания для вашего кота
+          </p>
+        </div>
       </header>
     <!-- Форма для подбора программы -->
-      <form class="form-selection form-selection__wrapper" action="https://echo.htmlacademy.ru/" method="get">
-        <section class="form-selection__selection-task">
-          <h2 class="visually-hidden">Форма подбора программы</h2>
-          <!-- Блок для ввода данных кота -->
-          <fieldset class="cat-data">
-            <legend class="visually-hidden">Данные кота</legend>
-            <ul class="cat-data__list">
-              <li class="cat-data__item">
-                <label class="cat-data__item-label" for="username">Имя:*</label>
-                <input class="input-box cat-data__input-box" type="text" name="username" id="username" placeholder="БАРСИК" required>
-              </li>
-              <li class="cat-data__item">
-                <label class="cat-data__item-label" for="weight-cat">Вес (кг):*</label>
-                <input class="input-box cat-data__input-box" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
-              </li>
-              <li class="cat-data__item">
-                <label class="cat-data__item-label" for="age">Возраст (лет):</label>
-                <input class="input-box cat-data__input-box" type="number" name="age" id="age" placeholder="7">
-              </li>
-            </ul>
-          </fieldset>
-          <!-- Чекбоксы  для вбора целей программы -->
-          <fieldset class="choice-program">
-              <legend class="visually-hidden">Выбор программы</legend>
-              <ul class="choice-program__list">
-                <li class="choice-program__item">
-                  <label class="choice-program__label" for="weight-loss">
-                    <input class="choice-program__input visually-hidden" type="radio" name="program" id="weight-loss" value="weight-loss" checked>
-                    <span class="choice-program__radio-button"></span>
-                    <span class="choice-program__item-name">Похудение</span>
+      <form class="form-selection" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="form-selection__wrapper">
+          <section class="form-selection__selection-task">
+            <h2 class="visually-hidden">Форма подбора программы</h2>
+            <!-- Блок для ввода данных кота -->
+            <fieldset class="cat-data">
+              <legend class="visually-hidden">Данные кота</legend>
+              <ul class="cat-data__list">
+                <li class="cat-data__item">
+                  <label class="cat-data__item-label" for="username">Имя:*</label>
+                  <input class="input-box cat-data__input-box" type="text" name="username" id="username" placeholder="БАРСИК" required>
+                </li>
+                <li class="cat-data__item">
+                  <label class="cat-data__item-label" for="weight-cat">Вес (кг):*</label>
+                  <input class="input-box cat-data__input-box" type="number" name="weight-cat" id="weight-cat" placeholder="7" required>
+                </li>
+                <li class="cat-data__item">
+                  <label class="cat-data__item-label" for="age">Возраст (лет):</label>
+                  <input class="input-box cat-data__input-box" type="number" name="age" id="age" placeholder="7">
+                </li>
+              </ul>
+            </fieldset>
+            <!-- Чекбоксы  для вбора целей программы -->
+            <fieldset class="choice-program">
+                <legend class="visually-hidden">Выбор программы</legend>
+                <ul class="choice-program__list">
+                  <li class="choice-program__item">
+                    <label class="choice-program__label" for="weight-loss">
+                      <input class="choice-program__input visually-hidden" type="radio" name="program" id="weight-loss" value="weight-loss" checked>
+                      <span class="choice-program__radio-button"></span>
+                      <span class="choice-program__item-name">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="choice-program__item">
+                    <label class="choice-program__label" for="fatten">
+                      <input class="choice-program__input visually-hidden" type="radio" name="program" id="fatten" value="fatten">
+                      <span class="choice-program__radio-button"></span>
+                      <span class="choice-program__item-name">Набор массы</span>
+                    </label>
+                  </li>
+                  <li class="choice-program__item">
+                    <label class="choice-program__label" for="undecided">
+                      <input class="choice-program__input visually-hidden" type="radio" name="program" id="undecided" value="undecided">
+                      <span class="choice-program__radio-button"></span>
+                      <span class="choice-program__item-name">Не знаю (Нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
+          </section>
+          <!-- Контактные данные владельца -->
+          <section class="form-selection__contact">
+            <fieldset class="contact">
+              <legend class="contact__title">Контактные данные
+                (владельца кота)</legend>
+              <ul class="contact__list">
+                <li class="contact__item">
+                  <label class="contact__item-label" for="email">E-mail:*</label>
+                  <div class="contact__input-container contact__input-container--email">
+                    <input class="input-box contact__input-box" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                    <svg width="19" height="14" viewBox="0 0 19 14" stroke="#222222">
+                      <use class="b" xlink:href="img/sprite.svg#icon-email" />
+                    </svg>
+                  </div>
+                </li>
+                <li class="contact__item contact-item">
+                  <label class="contact__item-label"  for="phone-number">Телефон:*</label>
+                  <div class="contact__input-container contact__input-container--phone">
+                    <input class="contact__input-box input-box" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required>
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="#000000">
+                      <use class="b" xlink:href="img/sprite.svg#icon-phone" />
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </fieldset>
+          </section>
+          <!-- Блок с коментарием -->
+          <section class="form-selection__comment comment">
+            <h2 class="visually-hidden">Комментарий</h2>
+            <label class="comment__title" for="comment">Комментарий</label>
+            <textarea class="comment__textarea" id="comment" name="comment" rows="8" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+          </section>
+          <!-- Блок с чекбоксами -->
+          <section class="form-selection__additionally">
+            <fieldset class="additionally">
+              <legend class="additionally__title">Дополнительно</legend>
+              <ul class="additionally__list">
+                <li class="additionally__item">
+                  <label class="additionally__label" for="sugar">
+                    <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="sugar" value="sugar" checked>
+                    <span class="additionally__checkbox"></span>
+                    <span class="additionally__item-name">сахарозаменитель</span>
                   </label>
                 </li>
-                <li class="choice-program__item">
-                  <label class="choice-program__label" for="fatten">
-                    <input class="choice-program__input visually-hidden" type="radio" name="program" id="fatten" value="fatten">
-                    <span class="choice-program__radio-button"></span>
-                    <span class="choice-program__item-name">Набор массы</span>
+                <li class="additionally__item">
+                  <label class="additionally__label" for="water">
+                    <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="water" value="water">
+                    <span class="additionally__checkbox"></span>
+                    <span class="additionally__item-name">питьевая вода</span>
                   </label>
                 </li>
-                <li class="choice-program__item">
-                  <label class="choice-program__label" for="undecided">
-                    <input class="choice-program__input visually-hidden" type="radio" name="program" id="undecided" value="undecided">
-                    <span class="choice-program__radio-button"></span>
-                    <span class="choice-program__item-name">Не знаю (Нужен ваш совет)</span>
+                <li class="additionally__item">
+                  <label class="additionally__label" for="milk">
+                    <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="milk" value="milk">
+                    <span class="additionally__checkbox"></span>
+                    <span class="additionally__item-name">молоко</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label" for="vitamins">
+                    <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="vitamins" value="vitamins">
+                    <span class="additionally__checkbox"></span>
+                    <span class="additionally__item-name">витамины</span>
                   </label>
                 </li>
               </ul>
-          </fieldset>
-        </section>
-        <!-- Контактные данные владельца -->
-        <section class="form-selection__contact">
-          <fieldset class="contact">
-            <legend class="contact__title">Контактные данные
-              (владельца кота)</legend>
-            <ul class="contact__list">
-              <li class="contact__item">
-                <label class="contact__item-label" for="email">E-mail:*</label>
-                <div class="contact__input-container contact__input-container--email">
-                  <input class="input-box contact__input-box" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-                  <svg width="19" height="14" viewBox="0 0 19 14" stroke="#222222">
-                    <use class="b" xlink:href="img/sprite.svg#icon-email" />
-                  </svg>
-                </div>
-              </li>
-              <li class="contact__item contact-item">
-                <label class="contact__item-label"  for="phone-number">Телефон:*</label>
-                <div class="contact__input-container contact__input-container--phone">
-                  <input class="contact__input-box input-box" type="tel" name="phone-number" id="phone-number" placeholder="8 (960) 900-60-90" required>
-                  <svg width="20" height="21" viewBox="0 0 20 21" fill="#000000">
-                    <use class="b" xlink:href="img/sprite.svg#icon-phone" />
-                  </svg>
-                </div>
-              </li>
-            </ul>
-          </fieldset>
-        </section>
-        <!-- Блок с коментарием -->
-        <section class="form-selection__comment comment">
-          <h2 class="visually-hidden">Комментарий</h2>
-          <label class="comment__title" for="comment">Комментарий</label>
-          <textarea class="comment__textarea" id="comment" name="comment" rows="8" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
-        </section>
-        <!-- Блок с чекбоксами -->
-        <section class="form-selection__additionally">
-          <fieldset class="additionally">
-            <legend class="additionally__title">Дополнительно</legend>
-            <ul class="additionally__list">
-              <li class="additionally__item">
-                <label class="additionally__label" for="sugar">
-                  <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="sugar" value="sugar" checked>
-                  <span class="additionally__checkbox"></span>
-                  <span class="additionally__item-name">сахарозаменитель</span>
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__label" for="water">
-                  <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="water" value="water">
-                  <span class="additionally__checkbox"></span>
-                  <span class="additionally__item-name">питьевая вода</span>
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__label" for="milk">
-                  <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="milk" value="milk">
-                  <span class="additionally__checkbox"></span>
-                  <span class="additionally__item-name">молоко</span>
-                </label>
-              </li>
-              <li class="additionally__item">
-                <label class="additionally__label" for="vitamins">
-                  <input class="additionally__input visually-hidden" type="checkbox" name="additionally" id="vitamins" value="vitamins">
-                  <span class="additionally__checkbox"></span>
-                  <span class="additionally__item-name">витамины</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <!-- Кнопка отправки формы -->
-          <input class="button button-submit-form" type="submit" value="отправить заявку">
-          <p class="form-selection__additionally--notation">* — Обязательные поля</p>
-        </section>
+            </fieldset>
+            <!-- Кнопка отправки формы -->
+            <input class="button button-submit-form" type="submit" value="отправить заявку">
+            <p class="form-selection__additionally--notation">* — Обязательные поля</p>
+          </section>
+        </div>
       </form>
       <!-- Блок с адресом -->
       <div class="address address--grey">
@@ -178,8 +181,8 @@
             дилеров!
           </p>
           <address class="address__address-location">ул. Большая
-            Конюшенная, д. 19/8<br class="address_address-location--br">
-            <br class="address_address-location--br">
+            Конюшенная, д. 19/8<br class="address__address-location--br">
+            <br class="address__address-location--br">
             Санкт-Петербург
           </address>
         </div>

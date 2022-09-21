@@ -103,25 +103,10 @@
 }
 
 .product__button {
-  border: none;
-  grid-column: 1/-1;
-  grid-row: 3/4;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  .button-def();
 
   @media (min-width: @tablet-width) {
     grid-column: 1/-1;
-  }
-}
-
-.product__button--additional {
-  @media (min-width: @tablet-width) {
-    grid-row: 2/3;
-  }
-
-  @media (min-width: @desktop-width) {
-    grid-row: 1/2;
-    grid-column: 3/4;
   }
 }
 
