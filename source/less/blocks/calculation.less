@@ -88,7 +88,7 @@
   }
 }
 
-.calculation__info--text {
+.calculation__info-text {
   position: absolute;
   display: block;
   background-color: inherit;
@@ -112,12 +112,16 @@
   }
 }
 
-.calculation__info--weight-loss {
-  grid-column: 1/2;
+.calculation__info {
+  &--weight-loss {
+    grid-column: 1/2;
+  }
 }
 
-.calculation__info--day {
-  grid-column: 2/3;
+.calculation__info {
+  &--day {
+    grid-column: 2/3;
+  }
 }
 
 .calculation__spent {

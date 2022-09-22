@@ -86,6 +86,8 @@
 }
 
 .showcase__image-before {
+  clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+
   @media (min-width: @tablet-width) {
     content: url("/img/cat-before-tablet.png");
     width: 560px;
@@ -94,6 +96,8 @@
 }
 
 .showcase__image-after {
+  clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+
   @media (min-width: @tablet-width) {
     content: url("/img/cat-after-tablet.png");
     width: 560px;
