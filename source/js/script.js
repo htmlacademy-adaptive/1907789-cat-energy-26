@@ -1,14 +1,14 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.header-container__toggle');
 
-navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove('main-nav--nojs', 'main-nav--opened');
 navToggle.classList.remove('header-container__toggle--nojs');
 
 navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
+  if (navMain.classList.contains('main-nav--opened')) {
+    navMain.classList.remove('main-nav--opened');
   } else {
-    navMain.classList.add('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
   }
 });
 
