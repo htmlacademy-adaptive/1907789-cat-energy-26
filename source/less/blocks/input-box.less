@@ -21,7 +21,7 @@
   }
 
   &:focus {
-    border-color: @dark-grey;
+    border: 2px solid @dark-grey;
   }
 
   &:focus + svg {
@@ -30,7 +30,7 @@
   }
 
   &:invalid:not(:focus):not(:placeholder-shown) {
-    border-color: @status-error;
+    border: 2px solid @status-error;
   }
 
   &:invalid:not(:focus):not(:placeholder-shown) + svg {
