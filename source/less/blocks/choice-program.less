@@ -1,3 +1,4 @@
+
 .choice-program {
   position: relative;
   .form-font();
@@ -90,5 +91,9 @@
 
   &:disabled ~ .choice-program__item-name {
     color: fade(@dark-grey-radio, 30%);
+  }
+
+  &:focus-visible + .choice-program__radio-button {
+    border: 2px solid @dark-grey;
   }
 }
