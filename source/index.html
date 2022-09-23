@@ -19,6 +19,12 @@
     <div class="main-header__container header-container">
       <a class="header-container__logo-link" href="index.html">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/logo-desktop.webp 1x, img/logo-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/logo-tablet.webp 1x, img/logo-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mobile.webp, img/logo-mobile@2x.webp 2x">
+
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.png">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.png">
           <img class="header-container__logo-image" src="img/logo-mobile.svg" width="33" height="37" alt="Кэт энерджи.">
@@ -184,15 +190,23 @@
             </p>
             <div class="showcase">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-before.webp, img/cat-before@2x.webp 2x">
+
                 <source media="(min-width: 768px)"
                   srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
                 <img class="showcase__image showcase__image-before" src="img/cat-before.png"
                   srcset="img/cat-before@2x.png 2x" width="280" height="256" alt="Толстый кот.">
               </picture>
               <picture>
+                <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-after.webp, img/cat-after@2x.webp 2x">
+
                 <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
                 <img class="showcase__image showcase__image-after" src="img/cat-after.png"
-                  srcset="img/cat-after@2x.png 2x" width="280" height="256" alt="Стройны кот.">
+                  srcset="img/cat-after@2x.png 2x" width="280" height="256" alt="Стройный кот.">
               </picture>
               <div class="showcase__curtain">
                 <svg class="showcase__arrow" width="24" height="18" viewBox="0 0 24 18" fill="#666666">

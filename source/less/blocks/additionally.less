@@ -116,4 +116,8 @@
   &:disabled ~ .additionally__item-name {
     color: fade(@dark-grey-radio, 30%);
   }
+
+  &:focus-visible + .additionally__checkbox {
+    border-color: @dark-grey;
+  }
 }
