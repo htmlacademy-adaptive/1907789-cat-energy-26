@@ -17,13 +17,17 @@
   }
 }
 
-.contact__title::after {
-  .line-right(14px);
+.contact__title {
+  &::after {
+    .line-right(14px);
+  }
 }
 
-.contact__title::before {
-  @media (min-width: @tablet-width) {
-    .line-left();
+.contact__title {
+  &::before {
+    @media (min-width: @tablet-width) {
+      .line-left();
+    }
   }
 }
 

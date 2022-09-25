@@ -11,13 +11,17 @@
   }
 }
 
-.comment__title::after {
-  .line-right(22px);
+.comment__title {
+  &::after {
+    .line-right(22px);
+  }
 }
 
-.comment__title::before {
-  @media (min-width: @tablet-width) {
-    .line-left();
+.comment__title {
+  &::before {
+    @media (min-width: @tablet-width) {
+      .line-left();
+    }
   }
 }
 

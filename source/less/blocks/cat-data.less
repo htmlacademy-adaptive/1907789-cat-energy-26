@@ -10,10 +10,12 @@
   }
 }
 
-.cat-data::after {
-  @media (max-width: 767px) {
-    .divider(-20px, -20px);
-    bottom: -24px;
+.cat-data {
+  &::after {
+    @media (max-width: 767px) {
+      .divider(-20px, -20px);
+      bottom: -24px;
+    }
   }
 }
 

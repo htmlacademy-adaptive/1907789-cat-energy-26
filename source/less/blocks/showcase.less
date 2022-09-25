@@ -69,19 +69,21 @@
   }
 }
 
-.showcase__curtain::before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 256px;
-  background-color: @curtain-grey;
-  border-radius: 2px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -1;
+.showcase__curtain {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 256px;
+    background-color: @curtain-grey;
+    border-radius: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
 
-  @media (min-width: @tablet-width) {
-    height: 512px;
+    @media (min-width: @tablet-width) {
+      height: 512px;
+    }
   }
 }
 

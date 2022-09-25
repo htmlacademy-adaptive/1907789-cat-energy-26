@@ -102,9 +102,11 @@
   }
 }
 
-.product__card-description-item::after {
-  @media (min-width: @tablet-width) {
-    .divider(0, 0);
+.product__card-description-item {
+  &::after {
+    @media (min-width: @tablet-width) {
+      .divider(0, 0);
+    }
   }
 }
 

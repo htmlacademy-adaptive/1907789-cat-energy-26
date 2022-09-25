@@ -33,8 +33,10 @@
   }
 }
 
-.main-header::after {
-  @media (max-width: 767px) {
-    .divider(0, 0);
+.main-header {
+  &::after {
+    @media (max-width: 767px) {
+      .divider(0, 0);
+    }
   }
 }
