@@ -25,7 +25,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    padding: 56px 70px;
+    padding: 59px 70px;
   }
 
   @media (min-width: @desktop-width) {
@@ -36,6 +36,7 @@
     top: 50%;
     transform: translateY(-50%);
     padding: 56px 80px;
+    z-index: 1;
   }
 }
 
@@ -65,14 +66,6 @@
   font-style: normal;
   display: block;
 
-  &--br {
-    display: none;
-
-    @media (min-width: @tablet-width) {
-      display: block;
-    }
-  }
-
   @media (min-width: @tablet-width) {
     font-size: 16px;
     text-align: right;
@@ -82,5 +75,14 @@
   @media (min-width: @desktop-width) {
     text-align: left;
     padding-left: 0;
+  }
+}
+
+
+.address__address-location br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
