@@ -120,11 +120,11 @@
     box-sizing: border-box;
     margin: 0;
   }
-}
 
-.product-lines__advantage::after {
-  @media (max-width: 767px) {
-    .divider(0, 20px);
+  &::after {
+    @media (max-width: 767px) {
+      .divider(0, 20px);
+    }
   }
 }
 
@@ -165,19 +165,19 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
 
-.product-lines__select-name::after {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 12px;
-  background-image: url("/img/arrow-normal.svg");
-  left: 97px;
-  top: 2px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 12px;
+    background-image: url("/img/arrow-normal.svg");
+    left: 97px;
+    top: 2px;
 
-  @media (min-width: @tablet-width) {
-    left: 132px;
-    top: 8px;
+    @media (min-width: @tablet-width) {
+      left: 132px;
+      top: 8px;
+    }
   }
 }

@@ -11,6 +11,7 @@
 
   @media (min-width: @tablet-width) {
     height: 613px;
+    margin-bottom: 7px;
   }
 
   @media (min-width: @desktop-width) {
@@ -67,21 +68,21 @@
   &:active::before {
     background-color: fade(@button-hover, 60%);
   }
-}
 
-.showcase__curtain::before {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 256px;
-  background-color: @curtain-grey;
-  border-radius: 2px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -1;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 256px;
+    background-color: @curtain-grey;
+    border-radius: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
 
-  @media (min-width: @tablet-width) {
-    height: 512px;
+    @media (min-width: @tablet-width) {
+      height: 512px;
+    }
   }
 }
 

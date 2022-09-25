@@ -1,8 +1,10 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.header-container__toggle');
+let googleMap = document.querySelector('.address-location__google');
 
 navMain.classList.remove('main-nav--nojs', 'main-nav--opened');
 navToggle.classList.remove('header-container__toggle--nojs');
+googleMap.classList.remove('address-location__google--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--opened')) {
